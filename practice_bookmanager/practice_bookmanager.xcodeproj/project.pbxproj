@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FD3C1BDA277627AE00550129 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C1BD9277627AE00550129 /* main.swift */; };
+		FD3C1BE12776ADFC00550129 /* books.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C1BE02776ADFC00550129 /* books.swift */; };
+		FD3C1BE32776B38E00550129 /* BookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C1BE22776B38E00550129 /* BookManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		FD3C1BD6277627AE00550129 /* practice_bookmanager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = practice_bookmanager; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3C1BD9277627AE00550129 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FD3C1BE02776ADFC00550129 /* books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = books.swift; sourceTree = "<group>"; };
+		FD3C1BE22776B38E00550129 /* BookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				FD3C1BD9277627AE00550129 /* main.swift */,
+				FD3C1BE22776B38E00550129 /* BookManager.swift */,
+				FD3C1BE02776ADFC00550129 /* books.swift */,
 			);
 			path = practice_bookmanager;
 			sourceTree = "<group>";
@@ -120,6 +126,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD3C1BE32776B38E00550129 /* BookManager.swift in Sources */,
+				FD3C1BE12776ADFC00550129 /* books.swift in Sources */,
 				FD3C1BDA277627AE00550129 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
