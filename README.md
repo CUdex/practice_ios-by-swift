@@ -1,2 +1,2 @@
 swift를 이용한 ios 앱 개발 실습
-1. bookmanager
+1. bookmanager (제작 중)

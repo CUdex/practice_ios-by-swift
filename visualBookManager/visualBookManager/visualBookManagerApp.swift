@@ -2,7 +2,6 @@
 //  visualBookManagerApp.swift
 //  visualBookManager
 //
-//  Created by 류찬울 on 2021/12/25.
 //
 
 import SwiftUI

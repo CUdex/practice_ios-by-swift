@@ -7,24 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD3C1C85277862FF00550129 /* visualBookManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C1C84277862FF00550129 /* visualBookManagerApp.swift */; };
-		FD3C1C87277862FF00550129 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C1C86277862FF00550129 /* ContentView.swift */; };
-		FD3C1C892778630000550129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3C1C882778630000550129 /* Assets.xcassets */; };
-		FD3C1C8C2778630000550129 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3C1C8B2778630000550129 /* Preview Assets.xcassets */; };
-		FDF7D50027789E96003EA63F /* AppFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF7D4FF27789E96003EA63F /* AppFunc.swift */; };
+		FD3C1C6B2778082700550129 /* count_app_by_swfitUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C1C6A2778082700550129 /* count_app_by_swfitUIApp.swift */; };
+		FD3C1C6D2778082700550129 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C1C6C2778082700550129 /* ContentView.swift */; };
+		FD3C1C6F2778082800550129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3C1C6E2778082800550129 /* Assets.xcassets */; };
+		FD3C1C722778082800550129 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3C1C712778082800550129 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FD3C1C81277862FF00550129 /* visualBookManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visualBookManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD3C1C84277862FF00550129 /* visualBookManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visualBookManagerApp.swift; sourceTree = "<group>"; };
-		FD3C1C86277862FF00550129 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FD3C1C882778630000550129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FD3C1C8B2778630000550129 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FDF7D4FF27789E96003EA63F /* AppFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFunc.swift; sourceTree = "<group>"; };
+		FD3C1C672778082700550129 /* count_app_by_swfitUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = count_app_by_swfitUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3C1C6A2778082700550129 /* count_app_by_swfitUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = count_app_by_swfitUIApp.swift; sourceTree = "<group>"; };
+		FD3C1C6C2778082700550129 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD3C1C6E2778082800550129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD3C1C712778082800550129 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FD3C1C7E277862FF00550129 /* Frameworks */ = {
+		FD3C1C642778082700550129 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,38 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FD3C1C78277862FF00550129 = {
+		FD3C1C5E2778082700550129 = {
 			isa = PBXGroup;
 			children = (
-				FD3C1C83277862FF00550129 /* visualBookManager */,
-				FD3C1C82277862FF00550129 /* Products */,
+				FD3C1C692778082700550129 /* count_app_by_swfitUI */,
+				FD3C1C682778082700550129 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FD3C1C82277862FF00550129 /* Products */ = {
+		FD3C1C682778082700550129 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FD3C1C81277862FF00550129 /* visualBookManager.app */,
+				FD3C1C672778082700550129 /* count_app_by_swfitUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FD3C1C83277862FF00550129 /* visualBookManager */ = {
+		FD3C1C692778082700550129 /* count_app_by_swfitUI */ = {
 			isa = PBXGroup;
 			children = (
-				FD3C1C84277862FF00550129 /* visualBookManagerApp.swift */,
-				FD3C1C86277862FF00550129 /* ContentView.swift */,
-				FDF7D4FF27789E96003EA63F /* AppFunc.swift */,
-				FD3C1C882778630000550129 /* Assets.xcassets */,
-				FD3C1C8A2778630000550129 /* Preview Content */,
+				FD3C1C6A2778082700550129 /* count_app_by_swfitUIApp.swift */,
+				FD3C1C6C2778082700550129 /* ContentView.swift */,
+				FD3C1C6E2778082800550129 /* Assets.xcassets */,
+				FD3C1C702778082800550129 /* Preview Content */,
 			);
-			path = visualBookManager;
+			path = count_app_by_swfitUI;
 			sourceTree = "<group>";
 		};
-		FD3C1C8A2778630000550129 /* Preview Content */ = {
+		FD3C1C702778082800550129 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				FD3C1C8B2778630000550129 /* Preview Assets.xcassets */,
+				FD3C1C712778082800550129 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -73,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FD3C1C80277862FF00550129 /* visualBookManager */ = {
+		FD3C1C662778082700550129 /* count_app_by_swfitUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FD3C1C8F2778630000550129 /* Build configuration list for PBXNativeTarget "visualBookManager" */;
+			buildConfigurationList = FD3C1C752778082800550129 /* Build configuration list for PBXNativeTarget "count_app_by_swfitUI" */;
 			buildPhases = (
-				FD3C1C7D277862FF00550129 /* Sources */,
-				FD3C1C7E277862FF00550129 /* Frameworks */,
-				FD3C1C7F277862FF00550129 /* Resources */,
+				FD3C1C632778082700550129 /* Sources */,
+				FD3C1C642778082700550129 /* Frameworks */,
+				FD3C1C652778082700550129 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = visualBookManager;
-			productName = visualBookManager;
-			productReference = FD3C1C81277862FF00550129 /* visualBookManager.app */;
+			name = count_app_by_swfitUI;
+			productName = count_app_by_swfitUI;
+			productReference = FD3C1C672778082700550129 /* count_app_by_swfitUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FD3C1C79277862FF00550129 /* Project object */ = {
+		FD3C1C5F2778082700550129 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					FD3C1C80277862FF00550129 = {
+					FD3C1C662778082700550129 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = FD3C1C7C277862FF00550129 /* Build configuration list for PBXProject "visualBookManager" */;
+			buildConfigurationList = FD3C1C622778082700550129 /* Build configuration list for PBXProject "count_app_by_swfitUI" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,43 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = FD3C1C78277862FF00550129;
-			productRefGroup = FD3C1C82277862FF00550129 /* Products */;
+			mainGroup = FD3C1C5E2778082700550129;
+			productRefGroup = FD3C1C682778082700550129 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FD3C1C80277862FF00550129 /* visualBookManager */,
+				FD3C1C662778082700550129 /* count_app_by_swfitUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FD3C1C7F277862FF00550129 /* Resources */ = {
+		FD3C1C652778082700550129 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD3C1C8C2778630000550129 /* Preview Assets.xcassets in Resources */,
-				FD3C1C892778630000550129 /* Assets.xcassets in Resources */,
+				FD3C1C722778082800550129 /* Preview Assets.xcassets in Resources */,
+				FD3C1C6F2778082800550129 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FD3C1C7D277862FF00550129 /* Sources */ = {
+		FD3C1C632778082700550129 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDF7D50027789E96003EA63F /* AppFunc.swift in Sources */,
-				FD3C1C87277862FF00550129 /* ContentView.swift in Sources */,
-				FD3C1C85277862FF00550129 /* visualBookManagerApp.swift in Sources */,
+				FD3C1C6D2778082700550129 /* ContentView.swift in Sources */,
+				FD3C1C6B2778082700550129 /* count_app_by_swfitUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FD3C1C8D2778630000550129 /* Debug */ = {
+		FD3C1C732778082800550129 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -210,7 +206,7 @@
 			};
 			name = Debug;
 		};
-		FD3C1C8E2778630000550129 /* Release */ = {
+		FD3C1C742778082800550129 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -265,14 +261,14 @@
 			};
 			name = Release;
 		};
-		FD3C1C902778630000550129 /* Debug */ = {
+		FD3C1C762778082800550129 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"visualBookManager/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"count_app_by_swfitUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -285,7 +281,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cudex.visualBookManager;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cudex.count-app-by-swfitUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -293,14 +289,14 @@
 			};
 			name = Debug;
 		};
-		FD3C1C912778630000550129 /* Release */ = {
+		FD3C1C772778082800550129 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"visualBookManager/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"count_app_by_swfitUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -313,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cudex.visualBookManager;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cudex.count-app-by-swfitUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -324,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FD3C1C7C277862FF00550129 /* Build configuration list for PBXProject "visualBookManager" */ = {
+		FD3C1C622778082700550129 /* Build configuration list for PBXProject "count_app_by_swfitUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD3C1C8D2778630000550129 /* Debug */,
-				FD3C1C8E2778630000550129 /* Release */,
+				FD3C1C732778082800550129 /* Debug */,
+				FD3C1C742778082800550129 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FD3C1C8F2778630000550129 /* Build configuration list for PBXNativeTarget "visualBookManager" */ = {
+		FD3C1C752778082800550129 /* Build configuration list for PBXNativeTarget "count_app_by_swfitUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD3C1C902778630000550129 /* Debug */,
-				FD3C1C912778630000550129 /* Release */,
+				FD3C1C762778082800550129 /* Debug */,
+				FD3C1C772778082800550129 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FD3C1C79277862FF00550129 /* Project object */;
+	rootObject = FD3C1C5F2778082700550129 /* Project object */;
 }
