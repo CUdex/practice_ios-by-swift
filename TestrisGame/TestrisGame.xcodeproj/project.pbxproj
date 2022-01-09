@@ -21,6 +21,7 @@
 		FDD13C272787E1180062BEA4 /* BrickGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD13C262787E1180062BEA4 /* BrickGenerator.swift */; };
 		FDD13C2D2789543F0062BEA4 /* LeftButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD13C2C2789543F0062BEA4 /* LeftButton.swift */; };
 		FDD13C2F278960320062BEA4 /* RightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD13C2E278960320062BEA4 /* RightButton.swift */; };
+		FDD13C31278976700062BEA4 /* RotationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD13C30278976700062BEA4 /* RotationButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		FDD13C262787E1180062BEA4 /* BrickGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickGenerator.swift; sourceTree = "<group>"; };
 		FDD13C2C2789543F0062BEA4 /* LeftButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftButton.swift; sourceTree = "<group>"; };
 		FDD13C2E278960320062BEA4 /* RightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightButton.swift; sourceTree = "<group>"; };
+		FDD13C30278976700062BEA4 /* RotationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				FDD13C2C2789543F0062BEA4 /* LeftButton.swift */,
 				FDD13C2E278960320062BEA4 /* RightButton.swift */,
+				FDD13C30278976700062BEA4 /* RotationButton.swift */,
 			);
 			path = Funtions;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				FDD13C272787E1180062BEA4 /* BrickGenerator.swift in Sources */,
 				FDD13C2F278960320062BEA4 /* RightButton.swift in Sources */,
 				FDD13C202785E4C20062BEA4 /* BackGround.swift in Sources */,
+				FDD13C31278976700062BEA4 /* RotationButton.swift in Sources */,
 				FDD13C232785E6CD0062BEA4 /* Variables.swift in Sources */,
 				FDD13C252785E76B0062BEA4 /* Brick.swift in Sources */,
 			);

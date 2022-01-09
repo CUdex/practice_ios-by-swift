@@ -38,6 +38,8 @@
 //print(type(of: result))
 //
 //
+
+import CoreGraphics
 //// class와 struct 차이
 //// class는 참조이고 struct는 값이다.
 //
@@ -409,3 +411,12 @@ print("first String : \(firstStr) | second String : \(secondStr)")
 print("first number : \(firstNum) | second number : \(secondNum)")
 swapAnyTypeValue(&firstNum, &secondNum)
 print("first number : \(firstNum) | second number : \(secondNum)")
+
+
+
+
+
+let x = CGFloat(3)
+let r = CGFloat(0)
+
+print(x * r)

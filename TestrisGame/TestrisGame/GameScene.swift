@@ -12,6 +12,7 @@ class GameScene: SKScene {
     
     var leftButton: LeftButton?
     var rightButton: RightButton?
+    var rotationButton: RotationButton?
     
     override func didMove(to view: SKView) {
         Variables.scene = self
@@ -21,6 +22,7 @@ class GameScene: SKScene {
         // 화면에 버튼 인스턴스 생성
         leftButton = LeftButton()
         rightButton = RightButton()
+        rotationButton = RotationButton()
         checkBrick()
     }
     
@@ -41,6 +43,8 @@ class GameScene: SKScene {
                 leftButton?.brickMoveLeft()
             } else if item.name == "right" {
                 rightButton?.brickMoveRight()
+            } else if item.name == "rotation" {
+                rotationButton?.brickRotation()
             }
         }
     }
