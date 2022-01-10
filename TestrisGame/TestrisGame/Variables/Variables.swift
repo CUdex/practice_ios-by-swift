@@ -17,7 +17,7 @@ struct Variables {
     static var brickValue = Brick().bricks()
     // 초기 블록 생성 기준 위치
     static var dx = 4
-    static var dy = 2
+    static var dy = 3
     static var gab = 1
     static var startPoint = CGPoint()
     static var brickArrays = Array<CGPoint>()
