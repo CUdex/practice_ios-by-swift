@@ -49,7 +49,7 @@ class GameScene: SKScene {
                 rotationButton?.brickRotation()
             } else if item.name == "down" {
                 downButton?.brickDown()
-            }
+            } 
         }
     }
 }

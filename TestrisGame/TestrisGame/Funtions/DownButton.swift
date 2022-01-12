@@ -35,6 +35,21 @@ class DownButton {
     // 블록인 내려갈수 있는 경우
     func possibleDown() {
         
+        // 블록의 열을 추가
+        Variables.dy += 1
+        var action = SKAction()
+        for (i, item) in Variables.brickArrays.enumerated() {
+            let x = Int(item.x) + Variables.dx
+            let y = Int(item.y) + Variables.dy
+            
+            // 기존 블럭 위치 초기화
+            Variables.backarrays[y - 1][x] -= 1
+            Variables.backarrays[y][x] += 1
+            // 블록 모양만큼 이동
+            action = SKAction.moveBy(x: 0, y: -CGFloat(Variables.brickValue.brickSize), duration: 0.1)
+            Variables.brickNode[i].run(action)
+        }
+        
     }
     // 블록이 내려갈 수 없는 경우
     func impossibleDown() {
