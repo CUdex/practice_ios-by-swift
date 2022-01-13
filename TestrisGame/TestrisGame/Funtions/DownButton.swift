@@ -53,7 +53,68 @@ class DownButton {
     }
     // 블록이 내려갈 수 없는 경우
     func impossibleDown() {
-        
+        // 블록 값을 2로 변경
+        for item in Variables.brickArrays {
+            let x = Int(item.x) + Variables.dx
+            let y = Int(item.y) + Variables.dy
+            Variables.backarrays[y][x] = 2
+            
+            // 새로운 블록 생성하여 배열 입력
+            let blocked = SKSpriteNode()
+            blocked.color = .gray
+            blocked.size = CGSize(width: Variables.brickValue.brickSize - Variables.gab, height: Variables.brickValue.brickSize - Variables.gab)
+            blocked.name = "blocked"
+            let xValue = x * Variables.brickValue.brickSize + Int(Variables.startPoint.x)
+            let yValue = y * Variables.brickValue.brickSize + Int(Variables.startPoint.y)
+            blocked.position = CGPoint(x: xValue, y: -yValue)
+            Variables.scene.addChild(blocked)
+            Variables.blockedArrays.append(blocked)
+        }
+        // 기존 블럭 삭제
+        for item in Variables.brickNode {
+            item.removeFromParent()
+        }
+        checkDelete()
+    }
+    
+    func checkDelete() {
+        // 블록에서 중복된 y 값을 제거
+        var set = Set<Int>()
+        for item in Variables.brickArrays {
+            let y = Int(item.y) + Variables.dy
+            set.insert(y)
+        }
+        // 가져온 y 값으로 행 체크
+        for y in set.sorted(){
+            let yValue = y * Variables.brickValue.brickSize + Int(Variables.startPoint.y)
+            // 체크한 행에 0이 포함되어 있는지 확인
+            if !Variables.backarrays[y].contains(0) {
+                Variables.backarrays.remove(at: y)
+                Variables.backarrays.insert([2,0,0,0,0,0,0,0,0,2], at: 1)
+                
+                for item in Variables.blockedArrays{
+                    // 같은 라인에 있는 경우
+                    if Int(item.position.y) == -yValue{
+                        if let removeItem = Variables.blockedArrays.firstIndex(of: item){
+                            Variables.blockedArrays.remove(at: removeItem)
+                            var action = SKAction()
+                            action = SKAction.fadeOut(withDuration: 0.1)
+                            item.run(action){
+                                // 액션이 끝난 후 행위
+                                item.removeFromParent()
+                            }
+                        }
+                    }
+                    // 현재 라인보다 위에 블록이 있는 경우
+                    if Int(item.position.y) > -yValue{
+                        var action = SKAction()
+                        action = SKAction.moveBy(x: 0, y: -CGFloat(Variables.brickValue.brickSize), duration: 0.5)
+                        item.run(action)
+                    }
+                }
+            }
+        }
+        _ = BrickGenerator()
     }
     
     func isBrickDownable() -> Bool {
