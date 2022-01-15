@@ -114,7 +114,10 @@ class DownButton {
                 }
             }
         }
-        _ = BrickGenerator()
+        if isGameOver(deadLine: Variables.dy){
+            _ = BrickGenerator()
+        }
+        
     }
     
     func isBrickDownable() -> Bool {
@@ -128,6 +131,19 @@ class DownButton {
             }
         }
         return true
+    }
+    
+    func isGameOver(deadLine: Int) -> Bool{
+        if deadLine > 2 {
+            return true
+        }
+        else {
+            if let scene = GameOver(fileNamed: "GameOver") {
+                let transition = SKTransition.moveIn(with: .right, duration: 1)
+                Variables.scene.view?.presentScene(scene, transition: transition)
+            }
+            return false
+        }
     }
     
     func anim() {

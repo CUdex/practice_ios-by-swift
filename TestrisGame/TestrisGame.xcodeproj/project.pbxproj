@@ -23,6 +23,9 @@
 		FDD13C2F278960320062BEA4 /* RightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD13C2E278960320062BEA4 /* RightButton.swift */; };
 		FDD13C31278976700062BEA4 /* RotationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD13C30278976700062BEA4 /* RotationButton.swift */; };
 		FDD13C33278C73040062BEA4 /* DownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD13C32278C73040062BEA4 /* DownButton.swift */; };
+		FDD13C362793178C0062BEA4 /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD13C352793178C0062BEA4 /* GameOver.swift */; };
+		FDD13C38279317DC0062BEA4 /* GameOver.sks in Resources */ = {isa = PBXBuildFile; fileRef = FDD13C37279317DC0062BEA4 /* GameOver.sks */; };
+		FDD13C3A27931AEB0062BEA4 /* StopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD13C3927931AEB0062BEA4 /* StopButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		FDD13C2E278960320062BEA4 /* RightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightButton.swift; sourceTree = "<group>"; };
 		FDD13C30278976700062BEA4 /* RotationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationButton.swift; sourceTree = "<group>"; };
 		FDD13C32278C73040062BEA4 /* DownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownButton.swift; sourceTree = "<group>"; };
+		FDD13C352793178C0062BEA4 /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
+		FDD13C37279317DC0062BEA4 /* GameOver.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOver.sks; sourceTree = "<group>"; };
+		FDD13C3927931AEB0062BEA4 /* StopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 		FDD13C062785E32A0062BEA4 /* TestrisGame */ = {
 			isa = PBXGroup;
 			children = (
+				FDD13C34279317790062BEA4 /* Scene */,
 				FDD13C2B2789542A0062BEA4 /* Funtions */,
 				FDD13C212785E6AD0062BEA4 /* Variables */,
 				FDD13C1E2785E4A00062BEA4 /* BackGround */,
@@ -115,8 +122,18 @@
 				FDD13C2E278960320062BEA4 /* RightButton.swift */,
 				FDD13C30278976700062BEA4 /* RotationButton.swift */,
 				FDD13C32278C73040062BEA4 /* DownButton.swift */,
+				FDD13C3927931AEB0062BEA4 /* StopButton.swift */,
 			);
 			path = Funtions;
+			sourceTree = "<group>";
+		};
+		FDD13C34279317790062BEA4 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				FDD13C352793178C0062BEA4 /* GameOver.swift */,
+				FDD13C37279317DC0062BEA4 /* GameOver.sks */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDD13C132785E32A0062BEA4 /* Main.storyboard in Resources */,
+				FDD13C38279317DC0062BEA4 /* GameOver.sks in Resources */,
 				FDD13C0A2785E32A0062BEA4 /* GameScene.sks in Resources */,
 				FDD13C152785E32B0062BEA4 /* Assets.xcassets in Resources */,
 				FDD13C182785E32B0062BEA4 /* LaunchScreen.storyboard in Resources */,
@@ -194,7 +212,9 @@
 			files = (
 				FDD13C0E2785E32A0062BEA4 /* GameScene.swift in Sources */,
 				FDD13C102785E32A0062BEA4 /* GameViewController.swift in Sources */,
+				FDD13C3A27931AEB0062BEA4 /* StopButton.swift in Sources */,
 				FDD13C2D2789543F0062BEA4 /* LeftButton.swift in Sources */,
+				FDD13C362793178C0062BEA4 /* GameOver.swift in Sources */,
 				FDD13C082785E32A0062BEA4 /* AppDelegate.swift in Sources */,
 				FDD13C272787E1180062BEA4 /* BrickGenerator.swift in Sources */,
 				FDD13C2F278960320062BEA4 /* RightButton.swift in Sources */,
