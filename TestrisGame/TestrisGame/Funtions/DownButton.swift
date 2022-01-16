@@ -115,6 +115,8 @@ class DownButton {
             }
         }
         if isGameOver(deadLine: Variables.dy){
+            // 블럭 새로 생성
+            NextBrick().nextBrickMoveLeft()
             _ = BrickGenerator()
         }
         

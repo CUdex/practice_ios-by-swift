@@ -15,7 +15,7 @@ class BrickGenerator {
     init() {
         Variables.dx = 4
         Variables.dy = 2
-        Variables.brickValue = Brick().bricks()
+        Variables.brickValue = Variables.newBrickArrays[0]
         // 생성된 블록의 x,y 값을 배열로 바인딩
         let brick = brickValue.points
         // 블록 위치 확인

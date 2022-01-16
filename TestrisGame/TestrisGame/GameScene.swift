@@ -21,6 +21,7 @@ class GameScene: SKScene {
         Variables.scene = self
         // background 인스턴스 생성
         _ = BackGround()
+        NextBrick().addBrick()
         _ = BrickGenerator()
         // 화면에 버튼 인스턴스 생성
         leftButton = LeftButton()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FDAC5816279451D3008653AE /* NextBrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAC5815279451D3008653AE /* NextBrick.swift */; };
 		FDD13C082785E32A0062BEA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD13C072785E32A0062BEA4 /* AppDelegate.swift */; };
 		FDD13C0A2785E32A0062BEA4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FDD13C092785E32A0062BEA4 /* GameScene.sks */; };
 		FDD13C0C2785E32A0062BEA4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FDD13C0B2785E32A0062BEA4 /* Actions.sks */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FDAC5815279451D3008653AE /* NextBrick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBrick.swift; sourceTree = "<group>"; };
 		FDD13C042785E32A0062BEA4 /* TestrisGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestrisGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD13C072785E32A0062BEA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDD13C092785E32A0062BEA4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				FDD13C30278976700062BEA4 /* RotationButton.swift */,
 				FDD13C32278C73040062BEA4 /* DownButton.swift */,
 				FDD13C3927931AEB0062BEA4 /* StopButton.swift */,
+				FDAC5815279451D3008653AE /* NextBrick.swift */,
 			);
 			path = Funtions;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				FDD13C102785E32A0062BEA4 /* GameViewController.swift in Sources */,
 				FDD13C3A27931AEB0062BEA4 /* StopButton.swift in Sources */,
 				FDD13C2D2789543F0062BEA4 /* LeftButton.swift in Sources */,
+				FDAC5816279451D3008653AE /* NextBrick.swift in Sources */,
 				FDD13C362793178C0062BEA4 /* GameOver.swift in Sources */,
 				FDD13C082785E32A0062BEA4 /* AppDelegate.swift in Sources */,
 				FDD13C272787E1180062BEA4 /* BrickGenerator.swift in Sources */,
