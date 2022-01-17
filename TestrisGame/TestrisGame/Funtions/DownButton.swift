@@ -92,6 +92,11 @@ class DownButton {
                 Variables.backarrays.remove(at: y)
                 Variables.backarrays.insert([2,0,0,0,0,0,0,0,0,2], at: 1)
                 
+                //삭제 효과음
+                Variables.blockedArrays.first?.run(SKAction.playSoundFileNamed("delete.wav", waitForCompletion: false))
+                // 삭제 효과 emitter
+                fire(position: CGPoint(x: Int(Variables.scene.frame.width) / 2, y: -yValue))
+                
                 for item in Variables.blockedArrays{
                     // 같은 라인에 있는 경우
                     if Int(item.position.y) == -yValue{
@@ -158,5 +163,14 @@ class DownButton {
         let action = SKAction.animate(with: textures, timePerFrame: 0.03)
         btn.run(action)
         
+    }
+    func fire(position: CGPoint){
+        let fire = SKEmitterNode(fileNamed: "Fire.sks")
+        fire?.particlePosition = position
+        fire?.particlePositionRange = CGVector(dx: Int(Variables.scene.frame.width) - Variables.brickValue.brickSize * 2, dy: Variables.brickValue.brickSize)
+        Variables.scene.addChild(fire!)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            fire?.removeFromParent()
+        }
     }
 }

@@ -16,8 +16,13 @@ class GameScene: SKScene {
     var downButton: DownButton?
     var stopButton: StopButton?
     var updateTime = 0.0
+    var sounds: Sounds?
     
     override func didMove(to view: SKView) {
+       setting()
+    }
+    
+    func setting() {
         Variables.scene = self
         // background 인스턴스 생성
         _ = BackGround()
@@ -29,7 +34,7 @@ class GameScene: SKScene {
         rotationButton = RotationButton()
         downButton = DownButton()
         stopButton = StopButton()
-        checkBrick()
+        sounds = Sounds()
     }
     
     // 위치 배열 생성
@@ -58,16 +63,25 @@ class GameScene: SKScene {
         for item in node {
             if item.name == "left" {
                 leftButton?.brickMoveLeft()
+                sounds?.buttonSounds(buttonName: "move")
             } else if item.name == "right" {
                 rightButton?.brickMoveRight()
+                sounds?.buttonSounds(buttonName: "move")
             } else if item.name == "rotation" {
                 rotationButton?.brickRotation()
+                sounds?.buttonSounds(buttonName: "rotation")
             } else if item.name == "down" {
                 while (downButton?.isBrickDownable())! {
                     downButton?.brickDown()
                 }
+                sounds?.buttonSounds(buttonName: "down")
             } else if item.name == "stop" {
                 stopButton?.brickStop()
+                if !Variables.isPouse {
+                    sounds?.soundPlay()
+                } else {
+                    sounds?.soundStop()
+                }
             }
         }
     }

@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		FDAC5816279451D3008653AE /* NextBrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAC5815279451D3008653AE /* NextBrick.swift */; };
+		FDAC58182795A731008653AE /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAC58172795A731008653AE /* Sounds.swift */; };
+		FDAC58332795ABB1008653AE /* rotation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FDAC582E2795ABB1008653AE /* rotation.mp3 */; };
+		FDAC58342795ABB1008653AE /* down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FDAC582F2795ABB1008653AE /* down.mp3 */; };
+		FDAC58352795ABB1008653AE /* delete.wav in Resources */ = {isa = PBXBuildFile; fileRef = FDAC58302795ABB1008653AE /* delete.wav */; };
+		FDAC58362795ABB1008653AE /* move.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FDAC58312795ABB1008653AE /* move.mp3 */; };
+		FDAC58372795ABB1008653AE /* bg_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FDAC58322795ABB1008653AE /* bg_sound.mp3 */; };
+		FDAC58392795AD16008653AE /* Fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = FDAC58382795AD16008653AE /* Fire.sks */; };
 		FDD13C082785E32A0062BEA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD13C072785E32A0062BEA4 /* AppDelegate.swift */; };
 		FDD13C0A2785E32A0062BEA4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FDD13C092785E32A0062BEA4 /* GameScene.sks */; };
 		FDD13C0C2785E32A0062BEA4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FDD13C0B2785E32A0062BEA4 /* Actions.sks */; };
@@ -31,6 +38,13 @@
 
 /* Begin PBXFileReference section */
 		FDAC5815279451D3008653AE /* NextBrick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBrick.swift; sourceTree = "<group>"; };
+		FDAC58172795A731008653AE /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		FDAC582E2795ABB1008653AE /* rotation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rotation.mp3; path = ../../../../../Downloads/source/sound/rotation.mp3; sourceTree = "<group>"; };
+		FDAC582F2795ABB1008653AE /* down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = down.mp3; path = ../../../../../Downloads/source/sound/down.mp3; sourceTree = "<group>"; };
+		FDAC58302795ABB1008653AE /* delete.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = delete.wav; path = ../../../../../Downloads/source/sound/delete.wav; sourceTree = "<group>"; };
+		FDAC58312795ABB1008653AE /* move.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = move.mp3; path = ../../../../../Downloads/source/sound/move.mp3; sourceTree = "<group>"; };
+		FDAC58322795ABB1008653AE /* bg_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bg_sound.mp3; path = ../../../../../Downloads/source/sound/bg_sound.mp3; sourceTree = "<group>"; };
+		FDAC58382795AD16008653AE /* Fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Fire.sks; path = ../Fire.sks; sourceTree = "<group>"; };
 		FDD13C042785E32A0062BEA4 /* TestrisGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestrisGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD13C072785E32A0062BEA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDD13C092785E32A0062BEA4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -64,6 +78,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FDAC58232795A78D008653AE /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC58322795ABB1008653AE /* bg_sound.mp3 */,
+				FDAC58302795ABB1008653AE /* delete.wav */,
+				FDAC582F2795ABB1008653AE /* down.mp3 */,
+				FDAC58312795ABB1008653AE /* move.mp3 */,
+				FDAC582E2795ABB1008653AE /* rotation.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		FDAC583A2795AE2A008653AE /* emiter */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC58382795AD16008653AE /* Fire.sks */,
+			);
+			path = emiter;
+			sourceTree = "<group>";
+		};
 		FDD13BFB2785E32A0062BEA4 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +117,8 @@
 		FDD13C062785E32A0062BEA4 /* TestrisGame */ = {
 			isa = PBXGroup;
 			children = (
+				FDAC583A2795AE2A008653AE /* emiter */,
+				FDAC58232795A78D008653AE /* sounds */,
 				FDD13C34279317790062BEA4 /* Scene */,
 				FDD13C2B2789542A0062BEA4 /* Funtions */,
 				FDD13C212785E6AD0062BEA4 /* Variables */,
@@ -126,6 +162,7 @@
 				FDD13C32278C73040062BEA4 /* DownButton.swift */,
 				FDD13C3927931AEB0062BEA4 /* StopButton.swift */,
 				FDAC5815279451D3008653AE /* NextBrick.swift */,
+				FDAC58172795A731008653AE /* Sounds.swift */,
 			);
 			path = Funtions;
 			sourceTree = "<group>";
@@ -198,10 +235,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDD13C132785E32A0062BEA4 /* Main.storyboard in Resources */,
+				FDAC58362795ABB1008653AE /* move.mp3 in Resources */,
 				FDD13C38279317DC0062BEA4 /* GameOver.sks in Resources */,
 				FDD13C0A2785E32A0062BEA4 /* GameScene.sks in Resources */,
+				FDAC58332795ABB1008653AE /* rotation.mp3 in Resources */,
+				FDAC58352795ABB1008653AE /* delete.wav in Resources */,
 				FDD13C152785E32B0062BEA4 /* Assets.xcassets in Resources */,
 				FDD13C182785E32B0062BEA4 /* LaunchScreen.storyboard in Resources */,
+				FDAC58342795ABB1008653AE /* down.mp3 in Resources */,
+				FDAC58392795AD16008653AE /* Fire.sks in Resources */,
+				FDAC58372795ABB1008653AE /* bg_sound.mp3 in Resources */,
 				FDD13C0C2785E32A0062BEA4 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +268,7 @@
 				FDD13C202785E4C20062BEA4 /* BackGround.swift in Sources */,
 				FDD13C33278C73040062BEA4 /* DownButton.swift in Sources */,
 				FDD13C31278976700062BEA4 /* RotationButton.swift in Sources */,
+				FDAC58182795A731008653AE /* Sounds.swift in Sources */,
 				FDD13C232785E6CD0062BEA4 /* Variables.swift in Sources */,
 				FDD13C252785E76B0062BEA4 /* Brick.swift in Sources */,
 			);
