@@ -30,7 +30,7 @@ class DownButton {
             impossibleDown()
         }
         
-        anim()
+//        anim()
     }
     // 블록인 내려갈수 있는 경우
     func possibleDown() {
@@ -90,7 +90,13 @@ class DownButton {
             // 체크한 행에 0이 포함되어 있는지 확인
             if !Variables.backarrays[y].contains(0) {
                 Variables.backarrays.remove(at: y)
-                Variables.backarrays.insert([2,0,0,0,0,0,0,0,0,2], at: 1)
+                var rowArray = Array<Int>()
+                for i in 0..<Variables.row {
+                    rowArray.append(0)
+                }
+                rowArray[rowArray.startIndex] = 2
+                rowArray[rowArray.endIndex - 1] = 2
+                Variables.backarrays.insert(rowArray, at: 1)
                 
                 //삭제 효과음
                 Variables.blockedArrays.first?.run(SKAction.playSoundFileNamed("delete.wav", waitForCompletion: false))

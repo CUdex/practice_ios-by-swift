@@ -26,4 +26,6 @@ struct Variables {
     static var isPouse = false
     static var nodeGroup = [[SKSpriteNode]]()
     static var newBrickArrays = [Brick.Bricks]()
+    static var row = 13
+    static var col = 25
 }

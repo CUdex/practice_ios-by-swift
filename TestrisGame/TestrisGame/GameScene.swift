@@ -35,6 +35,16 @@ class GameScene: SKScene {
         downButton = DownButton()
         stopButton = StopButton()
         sounds = Sounds()
+        lightEffent()
+    }
+    
+    func lightEffent() {
+        let light = SKLightNode()
+        light.position = CGPoint(x: Int(view!.frame.width) / 2, y: -100)
+        light.ambientColor = .white
+        light.lightColor = .white
+        light.categoryBitMask = 0b001
+        addChild(light)
     }
     
     // 위치 배열 생성
@@ -73,6 +83,7 @@ class GameScene: SKScene {
             } else if item.name == "down" {
                 while (downButton?.isBrickDownable())! {
                     downButton?.brickDown()
+                    downButton?.anim()
                 }
                 sounds?.buttonSounds(buttonName: "down")
             } else if item.name == "stop" {
