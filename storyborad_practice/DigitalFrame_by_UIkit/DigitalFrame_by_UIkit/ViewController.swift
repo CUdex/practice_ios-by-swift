@@ -11,6 +11,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var toggleButton: UIButton!
+    @IBOutlet weak var speedSlider: UISlider!
+    @IBOutlet weak var speedLable: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +39,19 @@ class ViewController: UIViewController {
         
         imageView.animationImages = cuteImages
         imageView.animationDuration = 15.0
+        speedLable.text = String(format: "%.2f", speedSlider.value)
  
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func speedSliderAction(_ sender: Any) {
+        //slider의 경우 주기적으로 이벤트 발생
+        imageView.animationDuration = Double(speedSlider.value)
+        imageView.startAnimating()
+        //stop으로 버튼 상태 변경
+        toggleButton.setTitle("stop", for: UIControl.State.normal)
+        //label에 속도 출력
+        speedLable.text = String(format: "%.2f", speedSlider.value)
     }
     
     
@@ -47,6 +60,7 @@ class ViewController: UIViewController {
             imageView.startAnimating()
             toggleButton.setTitle("stop", for: UIControl.State.normal)
         } else {
+            imageView.animationDuration = Double(speedSlider.value)
             imageView.stopAnimating()
             toggleButton.setTitle("start", for: UIControl.State.normal)
         }
