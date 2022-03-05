@@ -376,3 +376,43 @@ print(specialNumber(1234556))
 
 var test: Character = "5"
 print(test.asciiValue)
+
+
+func digits(num n: UInt64) -> Int {
+    return n.description.count
+}
+
+print(digits(num: 123456))
+
+
+let pattern = "([0-9]{0,})+5$"
+let pred = NSPredicate(format: "SELF MATCHES %@", pattern)
+
+pred.evaluate(with: "123151235")
+
+
+print((1...5).map { $0.description }.filter { !$0.contains("5") }.count)
+
+func nbDig(_ n: Int, _ d: Int) -> Int {
+  // your code
+    var result = 0
+    let digit: Character = "\(d)".first!
+    let stringAfterFilter = (0...n).map { String($0 * $0) }.filter { $0.contains("\(d)") }
+    for str in stringAfterFilter {
+        for countString in str {
+            if countString == digit { result += 1 }
+        }
+    }
+    return result
+}
+
+print((0...25).map { "\($0 * $0)".filter { $0 == Character("\(1)") }}.flatMap({ $0 }))
+
+func overTheRoad(address: Int, street: Int) -> Int {
+  // Your code goes here
+  return street * 2 - (address - 1)
+}
+
+print(overTheRoad(address: 6, street: 3))
+
+

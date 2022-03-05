@@ -1,21 +1,36 @@
 //
 //  AppDelegate.swift
-//  SignUpForm_by_UIkit
+//  AppLifeCycle
 //
-//  Created by cudex on 2022/03/01.
+//  Created by cudex on 2022/03/03.
 //
 
 import UIKit
 import CoreData
 
-
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    // finish 전에 동작하는 delegate 확인
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        print("will Finish Launch")
+        
+        return true
+    }
 
-
-
+    // finish 되고 나서 실행하는 delegate
+    // 일반적으로 core 데이터나 통신 관련 초기화 코드를 여기에서 코딩
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        print("did Finish Launch")
         return true
+    }
+    
+    
+    // 백그라운드에서 다시 돌아올 경우 실행되는 delegate
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        print("become Active")
     }
 
     // MARK: UISceneSession Lifecycle
@@ -41,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "SignUpForm_by_UIkit")
+        let container = NSPersistentContainer(name: "AppLifeCycle")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
