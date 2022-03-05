@@ -415,4 +415,17 @@ func overTheRoad(address: Int, street: Int) -> Int {
 
 print(overTheRoad(address: 6, street: 3))
 
+func disariumNumber(_ number: Int) -> String {
+  //Do Some Magic
+    var result: Double = 0
+  
+    for (idx, num) in number.description.enumerated() {
+        result += pow(Double(Int(num.description)!), Double(idx + 1))
+    }
+    
+  return Int(result) == number ? "Disarium !!" : "Not !!"
+}
+
+//정대리 시작한 날 1016
+disariumNumber(222)
 
