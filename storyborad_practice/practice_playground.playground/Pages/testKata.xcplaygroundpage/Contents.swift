@@ -295,137 +295,164 @@ func integerChangeString(_ string: String) -> Int {
 
 
 
-func printerError(_ s: String) -> String {
-    return "\(s.filter {$0 > "m"}.count)/\(s.count)"
-}
+//func printerError(_ s: String) -> String {
+//    return "\(s.filter {$0 > "m"}.count)/\(s.count)"
+//}
+//
+//
+//printerError("aaddqq")
+//
+//
+//let findSomeFirstText = {(name: String, find: String) -> Bool in
+//    if name.first?.description == find {
+//        return true
+//    }
+//    return false
+//}
+//
+//
+//findSomeFirstText("asdasdasdsadasd", "sd")
+//
+//
+//func extraPerfect(_ n: Int) -> [Int] {
+//    return (1...n).filter {$0 % 2 == 1}
+//}
+//
+//
+//extraPerfect(21)
+//
+//
+//
+//func squareDigits(_ num: Int) -> Int {
+//    return Int(num.description.map { Int(pow(Double(String($0))!, 2)).description }.joined()) ?? 0
+//}
+//
+//squareDigits(9119)
+//
+//
+//
+//class parent {
+//    var test = "test"
+//}
+//
+//class kid : parent {
+//    let wqe = "asd"
+//}
+//
+//class kid2 : parent {
+//    var sad = "asd"
+//}
+//
+//
+//let qq1 = kid()
+//let qq2 = kid2()
+//
+//var qq: [parent] = [qq1, qq2]
+//
+//qq[1].test
+//
+//
+//func horMirror(_ s: String) -> String {
+//    return Array(s.components(separatedBy: "\n").reversed()).map { String($0) }.joined(separator: "\n")
+//}
+//func vertMirror(_ s: String) -> String {
+//    return s.components(separatedBy: "\n").map { String($0.reversed()) }.joined(separator: "\n")
+//}
+//// replace the dots with function parameter
+//func oper(fun : (String) -> String, _ s: String) -> String {
+//    return fun(s)
+//}
+//
+//
+//print(horMirror("abcd\nefgh\nijkl\nmnop"), vertMirror("abcd\nefgh\nijkl\nmnop"), oper(fun: vertMirror, "abcd\nefgh\nijkl\nmnop"))
+//
+//
+//func specialNumber(_ number: Int) -> String {
+//    return number.description.map { $0 <= "5" ? 1 : 0 }.reduce(1, *) == 1 ? "special!" : "NOT!"
+//}
+//
+//
+//print(specialNumber(1234556))
+//
+//var test: Character = "5"
+//print(test.asciiValue)
+//
+//
+//func digits(num n: UInt64) -> Int {
+//    return n.description.count
+//}
+//
+//print(digits(num: 123456))
+//
+//
+//let pattern = "([0-9]{0,})+5$"
+//let pred = NSPredicate(format: "SELF MATCHES %@", pattern)
+//
+//pred.evaluate(with: "123151235")
+//
+//
+//print((1...5).map { $0.description }.filter { !$0.contains("5") }.count)
+//
+//func nbDig(_ n: Int, _ d: Int) -> Int {
+//  // your code
+//    var result = 0
+//    let digit: Character = "\(d)".first!
+//    let stringAfterFilter = (0...n).map { String($0 * $0) }.filter { $0.contains("\(d)") }
+//    for str in stringAfterFilter {
+//        for countString in str {
+//            if countString == digit { result += 1 }
+//        }
+//    }
+//    return result
+//}
+//
+//print((0...25).map { "\($0 * $0)".filter { $0 == Character("\(1)") }}.flatMap({ $0 }))
+//
+//func overTheRoad(address: Int, street: Int) -> Int {
+//  // Your code goes here
+//  return street * 2 - (address - 1)
+//}
+//
+//print(overTheRoad(address: 6, street: 3))
+//
+//func disariumNumber(_ number: Int) -> String {
+//  //Do Some Magic
+//    var result: Double = 0
+//
+//    for (idx, num) in number.description.enumerated() {
+//        result += pow(Double(Int(num.description)!), Double(idx + 1))
+//    }
+//
+//  return Int(result) == number ? "Disarium !!" : "Not !!"
+//}
+//
+////정대리 시작한 날 1016
+//disariumNumber(222)
 
 
-printerError("aaddqq")
-
-
-let findSomeFirstText = {(name: String, find: String) -> Bool in
-    if name.first?.description == find {
-        return true
-    }
-    return false
-}
-
-
-findSomeFirstText("asdasdasdsadasd", "sd")
-
-
-func extraPerfect(_ n: Int) -> [Int] {
-    return (1...n).filter {$0 % 2 == 1}
-}
-
-
-extraPerfect(21)
-
-
-
-func squareDigits(_ num: Int) -> Int {
-    return Int(num.description.map { Int(pow(Double(String($0))!, 2)).description }.joined()) ?? 0
-}
-
-squareDigits(9119)
-
-
-
-class parent {
-    var test = "test"
-}
-
-class kid : parent {
-    let wqe = "asd"
-}
-
-class kid2 : parent {
-    var sad = "asd"
-}
-
-
-let qq1 = kid()
-let qq2 = kid2()
-
-var qq: [parent] = [qq1, qq2]
-
-qq[1].test
-
-
-func horMirror(_ s: String) -> String {
-    return Array(s.components(separatedBy: "\n").reversed()).map { String($0) }.joined(separator: "\n")
-}
-func vertMirror(_ s: String) -> String {
-    return s.components(separatedBy: "\n").map { String($0.reversed()) }.joined(separator: "\n")
-}
-// replace the dots with function parameter
-func oper(fun : (String) -> String, _ s: String) -> String {
-    return fun(s)
-}
-
-
-print(horMirror("abcd\nefgh\nijkl\nmnop"), vertMirror("abcd\nefgh\nijkl\nmnop"), oper(fun: vertMirror, "abcd\nefgh\nijkl\nmnop"))
-
-
-func specialNumber(_ number: Int) -> String {
-    return number.description.map { $0 <= "5" ? 1 : 0 }.reduce(1, *) == 1 ? "special!" : "NOT!"
-}
-
-
-print(specialNumber(1234556))
-
-var test: Character = "5"
-print(test.asciiValue)
-
-
-func digits(num n: UInt64) -> Int {
-    return n.description.count
-}
-
-print(digits(num: 123456))
-
-
-let pattern = "([0-9]{0,})+5$"
-let pred = NSPredicate(format: "SELF MATCHES %@", pattern)
-
-pred.evaluate(with: "123151235")
-
-
-print((1...5).map { $0.description }.filter { !$0.contains("5") }.count)
-
-func nbDig(_ n: Int, _ d: Int) -> Int {
-  // your code
-    var result = 0
-    let digit: Character = "\(d)".first!
-    let stringAfterFilter = (0...n).map { String($0 * $0) }.filter { $0.contains("\(d)") }
-    for str in stringAfterFilter {
-        for countString in str {
-            if countString == digit { result += 1 }
-        }
-    }
-    return result
-}
-
-print((0...25).map { "\($0 * $0)".filter { $0 == Character("\(1)") }}.flatMap({ $0 }))
-
-func overTheRoad(address: Int, street: Int) -> Int {
-  // Your code goes here
-  return street * 2 - (address - 1)
-}
-
-print(overTheRoad(address: 6, street: 3))
-
-func disariumNumber(_ number: Int) -> String {
+func jumpingNumber(_ number: Int) -> String {
   //Do Some Magic
-    var result: Double = 0
-  
-    for (idx, num) in number.description.enumerated() {
-        result += pow(Double(Int(num.description)!), Double(idx + 1))
+    let numberCount = number.description.count - 1
+    let numbers = number.description.map { $0.wholeNumberValue! }
+    var result = 0
+    for num in 1..<numbers.count {
+        result += abs(numbers[num - 1] - numbers[num]) == 1 ? 1 : 0
     }
-    
-  return Int(result) == number ? "Disarium !!" : "Not !!"
+    return numberCount == result ? "Jumping!!" : "Not!!"
 }
 
-//정대리 시작한 날 1016
-disariumNumber(222)
+abs(123)
+
+print(jumpingNumber(5656))
+
+
+
+
+
+
+
+
+
+
+
 

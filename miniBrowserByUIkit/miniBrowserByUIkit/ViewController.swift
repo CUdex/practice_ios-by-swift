@@ -20,15 +20,25 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        spinningActivityIndicatorView.hidesWhenStopped = true
+        spinningActivityIndicatorView.startAnimating()
         // 초기 실행 시 facebook 호출하기 위한 함수
         let initUrl = "https://www.facebook.com"
         let myUrl = URL(string: initUrl)
         let urlRequest = URLRequest(url: myUrl!)
         mainWebView.load(urlRequest)
+        urlTextField.text = initUrl
+        spinningActivityIndicatorView.stopAnimating()
+        
     }
     
     
     @IBAction func bookMarkAction(_ sender: Any) {
+        
+        let bookMarkUrl = bookMarkSegmentedControl.titleForSegment(at: bookMarkSegmentedControl.selectedSegmentIndex)
+        let initUrl = "https://www.\(bookMarkUrl!).com"
+        mainWebView.load(URLRequest(url: URL(string: initUrl)!))
+        urlTextField.text = initUrl
     }
     @IBAction func goBackAction(_ sender: Any) {
     }
