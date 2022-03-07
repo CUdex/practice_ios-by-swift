@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var bookMarkSegmentedControl: UISegmentedControl!
     @IBOutlet weak var urlTextField: UITextField!
@@ -40,13 +40,30 @@ class ViewController: UIViewController {
         mainWebView.load(URLRequest(url: URL(string: initUrl)!))
         urlTextField.text = initUrl
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        var urlString = "\(urlTextField.text!)"
+        // 입력값에 https가 있는 지 확인하고 없을 경우 자동으로 추가
+        if !urlString.hasPrefix("https://") {
+            urlString = "https://\(urlTextField.text!)"
+        }
+        mainWebView.load(URLRequest(url: URL(string: urlString)!))
+        // go 버튼을 누르면 키보드 제거
+        textField.resignFirstResponder()
+        return true
+    }
+    
     @IBAction func goBackAction(_ sender: Any) {
+        mainWebView.goBack()
     }
     @IBAction func goForwardAction(_ sender: Any) {
+        mainWebView.goForward()
     }
     @IBAction func stopLoadingAction(_ sender: Any) {
+        mainWebView.stopLoading()
     }
     @IBAction func reloadAction(_ sender: Any) {
+        mainWebView.reload()
     }
     
     

@@ -445,8 +445,24 @@ abs(123)
 
 print(jumpingNumber(5656))
 
+func rowSumOddNumbers(_ row: Int) -> Int {
+  var result = 0
+  var startNum = 1
+  var plusNum = 0
+  
+  for _ in 1...row {
+    startNum += plusNum
+    plusNum += 2
+  }
+    for _ in 1...row {
+        result += startNum
+        startNum += 2
+    }
+  return result
+}
 
 
+rowSumOddNumbers(2)
 
 
 
