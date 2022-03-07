@@ -53,6 +53,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    
+    // 웹 이동 네비게이터
     @IBAction func goBackAction(_ sender: Any) {
         mainWebView.goBack()
     }
