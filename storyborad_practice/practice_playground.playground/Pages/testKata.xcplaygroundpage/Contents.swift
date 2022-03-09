@@ -467,6 +467,18 @@ rowSumOddNumbers(2)
 
 
 
+func lastChair(_ n: Int) -> Int {
+    
+    var chairs = [Int](repeating: 0, count: n)
+    for _ in 1...n {
+        
+    }
+    return 0
+}
+
+
+
+
 
 
 
