@@ -175,60 +175,60 @@ import Foundation
 
 
 
-func accum(_ s: String) -> String {
-    var result = ""
-    var count = 1
-    for alph in s {
-        for i in 1...count {
-            i == 1 ? (result += alph.uppercased()) : (result += alph.lowercased())
-        }
-        count += 1
-        result += "-"
-    }
-    result.removeLast()
-    return result
-}
-
-print(accum("aaqQZs"))
-
-var str = "asdasdasd"
-
-print(str.enumerated().map {
-    String(repeating: $1, count: $0 + 1)
-}.joined(separator: "-"))
-
-
-for (i, strm) in str.enumerated() {
-    print("index : \(i) and str : \(strm)")
-    
-    
-    
-    
-}
-
-var testii = [[Int]]()
-
-testii = [[3, 2, 1], [4, 6, 5], [], [9, 7, 8]]
-print(testii.flatMap() {$0}.sorted())
-
-
-func integerChangeString(_ string: String) -> Int {
-    var result: Int = 0
-    var checkSum: Int = 0
-    
-    for i in string {
-        if let intre = i.wholeNumberValue {
-            checkSum *= 10
-            checkSum += intre
-            print(checkSum)
-        } else {
-            result += checkSum
-            checkSum = 0
-        }
-    }
-    if checkSum != 0 {result += checkSum}
-    return result
-}
+//func accum(_ s: String) -> String {
+//    var result = ""
+//    var count = 1
+//    for alph in s {
+//        for i in 1...count {
+//            i == 1 ? (result += alph.uppercased()) : (result += alph.lowercased())
+//        }
+//        count += 1
+//        result += "-"
+//    }
+//    result.removeLast()
+//    return result
+//}
+//
+//print(accum("aaqQZs"))
+//
+//var str = "asdasdasd"
+//
+//print(str.enumerated().map {
+//    String(repeating: $1, count: $0 + 1)
+//}.joined(separator: "-"))
+//
+//
+//for (i, strm) in str.enumerated() {
+//    print("index : \(i) and str : \(strm)")
+//
+//
+//
+//
+//}
+//
+//var testii = [[Int]]()
+//
+//testii = [[3, 2, 1], [4, 6, 5], [], [9, 7, 8]]
+//print(testii.flatMap() {$0}.sorted())
+//
+//
+//func integerChangeString(_ string: String) -> Int {
+//    var result: Int = 0
+//    var checkSum: Int = 0
+//
+//    for i in string {
+//        if let intre = i.wholeNumberValue {
+//            checkSum *= 10
+//            checkSum += intre
+//            print(checkSum)
+//        } else {
+//            result += checkSum
+//            checkSum = 0
+//        }
+//    }
+//    if checkSum != 0 {result += checkSum}
+//    return result
+//}
 
 
 
@@ -430,57 +430,65 @@ func integerChangeString(_ string: String) -> Int {
 //disariumNumber(222)
 
 
-func jumpingNumber(_ number: Int) -> String {
-  //Do Some Magic
-    let numberCount = number.description.count - 1
-    let numbers = number.description.map { $0.wholeNumberValue! }
+//func jumpingNumber(_ number: Int) -> String {
+//  //Do Some Magic
+//    let numberCount = number.description.count - 1
+//    let numbers = number.description.map { $0.wholeNumberValue! }
+//    var result = 0
+//    for num in 1..<numbers.count {
+//        result += abs(numbers[num - 1] - numbers[num]) == 1 ? 1 : 0
+//    }
+//    return numberCount == result ? "Jumping!!" : "Not!!"
+//}
+//
+//abs(123)
+//
+//print(jumpingNumber(5656))
+//
+//func rowSumOddNumbers(_ row: Int) -> Int {
+//  var result = 0
+//  var startNum = 1
+//  var plusNum = 0
+//
+//  for _ in 1...row {
+//    startNum += plusNum
+//    plusNum += 2
+//  }
+//    for _ in 1...row {
+//        result += startNum
+//        startNum += 2
+//    }
+//  return result
+//}
+//
+//
+//rowSumOddNumbers(2)
+
+func sumOfMinimums(_ numbers: [[Int]]) -> Int {
     var result = 0
-    for num in 1..<numbers.count {
-        result += abs(numbers[num - 1] - numbers[num]) == 1 ? 1 : 0
+    for num in numbers {
+        result += num.sorted()[0]
     }
-    return numberCount == result ? "Jumping!!" : "Not!!"
+    return result
 }
+let num = [ [ 1, 2, 3, 4, 5 ] , [ 5, 6, 7, 8, 9 ] , [ 20, 21, 34, 56, 100 ]]
 
-abs(123)
+sumOfMinimums(num)
 
-print(jumpingNumber(5656))
 
-func rowSumOddNumbers(_ row: Int) -> Int {
-  var result = 0
-  var startNum = 1
-  var plusNum = 0
-  
-  for _ in 1...row {
-    startNum += plusNum
-    plusNum += 2
+
+func maskify(_ string:String) -> String {
+  guard string.count > 4 else {
+    return string
   }
-    for _ in 1...row {
-        result += startNum
-        startNum += 2
-    }
-  return result
+    var result = String(repeating: "#", count: string.count - 5)
+    result += string.suffix(4)
+    return result
 }
 
-
-rowSumOddNumbers(2)
-
-
-
-
-func lastChair(_ n: Int) -> Int {
-    
-    var chairs = [Int](repeating: 0, count: n)
-    for _ in 1...n {
-        
-    }
-    return 0
+func maskify2(_ string:String) -> String {
+    return string.enumerated().map { $0 < string.count - 4 ? "#" : "\($1)" }.joined()
 }
 
-
-
-
-
-
-
-
-
+let asd = "asddd"
+maskify2(asd)
