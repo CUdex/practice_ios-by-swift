@@ -492,3 +492,18 @@ func maskify2(_ string:String) -> String {
 
 let asd = "asddd"
 maskify2(asd)
+
+
+func balancedNumber(_ number: Int) -> String {
+    guard number > 99 else {
+        return "balance"
+    }
+    let num = number.description.map { $0.wholeNumberValue! }
+    let max = num.count % 2 == 1 ? (num.count / 2) : (num.count / 2 - 1)
+    let left = num.prefix(max).reduce(0, +)
+    let right = num.suffix(max).reduce(0, +)
+    
+    return left == right ? "blance" : "Not Balance"
+}
+
+balancedNumber(92629)
