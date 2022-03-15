@@ -137,8 +137,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="iNS-nW-MKd" kind="relationship" relationship="viewControllers" id="ylR-hV-DfL"/>
                         <segue destination="Dfs-e4-Zd8" kind="relationship" relationship="viewControllers" id="Acd-W6-mP4"/>
+                        <segue destination="iNS-nW-MKd" kind="relationship" relationship="viewControllers" id="ylR-hV-DfL"/>
                         <segue destination="K67-3d-T2S" kind="relationship" relationship="viewControllers" id="vYB-Fv-fBO"/>
                     </connections>
                 </tabBarController>
