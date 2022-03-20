@@ -84,8 +84,8 @@
 			children = (
 				FD63A05727E628FD00672E41 /* Resource */,
 				FD63A04027E6287900672E41 /* AppDelegate.swift */,
-				FD63A04227E6287900672E41 /* SceneDelegate.swift */,
 				FD63A04427E6287900672E41 /* ViewController.swift */,
+				FD63A04227E6287900672E41 /* SceneDelegate.swift */,
 				FD63A04627E6287900672E41 /* Main.storyboard */,
 				FD63A04C27E6287A00672E41 /* Assets.xcassets */,
 				FD63A04E27E6287A00672E41 /* LaunchScreen.storyboard */,

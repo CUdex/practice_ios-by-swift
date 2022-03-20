@@ -8,15 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var dogButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        
     }
 
-
+    @IBAction func backButtonAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }
 
