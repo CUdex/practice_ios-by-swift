@@ -32,11 +32,14 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
     }
     @IBAction func cancelAction(_ sender: Any) {
     }
+    
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
-        <#code#>
+        // 데이터 저장
+        let dataTemp:Data = try! Data(contentsOf: location)
+        // 저장된 데이터를 UIImage로 구현
+        imgView.image = UIImage(data: dataTemp)
     }
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
-        <#code#>
     }
 }
 

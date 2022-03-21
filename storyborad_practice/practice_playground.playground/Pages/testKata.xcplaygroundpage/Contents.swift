@@ -464,46 +464,111 @@ import Foundation
 //
 //rowSumOddNumbers(2)
 
-func sumOfMinimums(_ numbers: [[Int]]) -> Int {
-    var result = 0
-    for num in numbers {
-        result += num.sorted()[0]
-    }
-    return result
-}
-let num = [ [ 1, 2, 3, 4, 5 ] , [ 5, 6, 7, 8, 9 ] , [ 20, 21, 34, 56, 100 ]]
+//func sumOfMinimums(_ numbers: [[Int]]) -> Int {
+//    var result = 0
+//    for num in numbers {
+//        result += num.sorted()[0]
+//    }
+//    return result
+//}
+//let num = [ [ 1, 2, 3, 4, 5 ] , [ 5, 6, 7, 8, 9 ] , [ 20, 21, 34, 56, 100 ]]
+//
+//sumOfMinimums(num)
+//
+//
+//
+//func maskify(_ string:String) -> String {
+//  guard string.count > 4 else {
+//    return string
+//  }
+//    var result = String(repeating: "#", count: string.count - 5)
+//    result += string.suffix(4)
+//    return result
+//}
+//
+//func maskify2(_ string:String) -> String {
+//    return string.enumerated().map { $0 < string.count - 4 ? "#" : "\($1)" }.joined()
+//}
+//
+//let asd = "asddd"
+//maskify2(asd)
+//
+//
+//func balancedNumber(_ number: Int) -> String {
+//    guard number > 99 else {
+//        return "balance"
+//    }
+//    let num = number.description.map { $0.wholeNumberValue! }
+//    let max = num.count % 2 == 1 ? (num.count / 2) : (num.count / 2 - 1)
+//    let left = num.prefix(max).reduce(0, +)
+//    let right = num.suffix(max).reduce(0, +)
+//
+//    return left == right ? "blance" : "Not Balance"
+//}
+//
+//balancedNumber(92629)
 
-sumOfMinimums(num)
+//func solution(_ id_list:[String], _ report:[String], _ k:Int) -> [Int] {
+//    var result =  [String:[String]]()
+//    var targetCount = [String:Int]()
+//    var listDoc = [String]()
+//    var closeTarget = [String]()
+//    var count = [Int]()
+//
+//    for id in id_list {
+//        result[id] = []
+//        targetCount[id] = 0
+//    }
+//
+//    for names in report {
+//        listDoc = names.components(separatedBy: " ")
+//        if !(result[listDoc[0]]!.contains(listDoc[1])) {
+//            result[listDoc[0]]! += [listDoc[1]]
+//            targetCount[listDoc[1]]! += 1
+//        }
+//    }
+//
+//    for value in targetCount {
+//        if value.value < k {
+//            closeTarget.append(value.key)
+//        }
+//    }
+//
+//    for value in result {
+//        result[value.key] = Array(Set(value.value).subtracting(closeTarget))
+//    }
+//
+//    for id in id_list {
+//        count.append(result[id]!.count)
+//    }
+//    return count
+//}
 
-
-
-func maskify(_ string:String) -> String {
-  guard string.count > 4 else {
-    return string
-  }
-    var result = String(repeating: "#", count: string.count - 5)
-    result += string.suffix(4)
-    return result
-}
-
-func maskify2(_ string:String) -> String {
-    return string.enumerated().map { $0 < string.count - 4 ? "#" : "\($1)" }.joined()
-}
-
-let asd = "asddd"
-maskify2(asd)
-
-
-func balancedNumber(_ number: Int) -> String {
-    guard number > 99 else {
-        return "balance"
-    }
-    let num = number.description.map { $0.wholeNumberValue! }
-    let max = num.count % 2 == 1 ? (num.count / 2) : (num.count / 2 - 1)
-    let left = num.prefix(max).reduce(0, +)
-    let right = num.suffix(max).reduce(0, +)
+func solution(_ id_list:[String], _ report:[String], _ k:Int) -> [Int] {
+    var result: [String:[String]] = [:]
+    var targetCount: [String:Int] = [:]
+    var listDoc = [String]()
     
-    return left == right ? "blance" : "Not Balance"
+    for id in id_list {
+        result[id] = []
+        targetCount[id] = 0
+    }
+    
+    for names in report {
+        listDoc = names.components(separatedBy: " ")
+        if !(result[listDoc[0]]!.contains(listDoc[1])) {
+            result[listDoc[0]]! += [listDoc[1]]
+            targetCount[listDoc[1]]! += 1
+        }
+    }
+    
+    return id_list.map { name in
+        return result[name]!.reduce(0) { $0 + (targetCount[$1]! >= k ? 1 : 0)  }
+    }
 }
 
-balancedNumber(92629)
+
+let id = ["muzi", "frodo", "apeach", "neo"]
+let report = ["muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"]
+let k = 2
+print(solution(id, report, k))
