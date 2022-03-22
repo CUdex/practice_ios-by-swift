@@ -18,9 +18,13 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        progressView.progress = 0.0
+        indicatorView.hidesWhenStopped = true
     }
 
     @IBAction func DownLoadAction(_ sender: Any) {
+        imgView.image = nil
+        indicatorView.startAnimating()
         let sessionConfiguration = URLSessionConfiguration.default
         let session = URLSession(configuration: sessionConfiguration, delegate: self, delegateQueue: OperationQueue.main)
         downloadTask = session.downloadTask(with: URL(string: "https://raw.githubusercontent.com/ChoiJinYoung/iphonewithswift2/master/sample.jpeg")!)
@@ -38,8 +42,11 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
         let dataTemp:Data = try! Data(contentsOf: location)
         // 저장된 데이터를 UIImage로 구현
         imgView.image = UIImage(data: dataTemp)
+        indicatorView.stopAnimating()
     }
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
+        let progress: Float = Float(totalBytesWritten / totalBytesExpectedToWrite)
+        progressView.setProgress(progress, animated: true)
     }
 }
 
