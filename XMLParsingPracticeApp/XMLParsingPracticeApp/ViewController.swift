@@ -86,6 +86,7 @@ extension ViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! weatherCellController
         
         let tempData = weatherData[indexPath.row]
+        print(tempData)
         let weatherStr = tempData["weather"]
         
         cell.countryLable.text = tempData["country"]
