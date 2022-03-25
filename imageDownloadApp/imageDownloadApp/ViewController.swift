@@ -31,14 +31,20 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
         downloadTask.resume()
     }
     @IBAction func suspendAction(_ sender: Any) {
+        downloadTask.suspend()
     }
     @IBAction func resumeAction(_ sender: Any) {
+        downloadTask.resume()
     }
     @IBAction func cancelAction(_ sender: Any) {
+        downloadTask.cancel()
+        progressView.setProgress(0.0, animated: false)
+        indicatorView.stopAnimating()
     }
     
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
         // 데이터 저장
+        print(location)
         let dataTemp:Data = try! Data(contentsOf: location)
         // 저장된 데이터를 UIImage로 구현
         imgView.image = UIImage(data: dataTemp)

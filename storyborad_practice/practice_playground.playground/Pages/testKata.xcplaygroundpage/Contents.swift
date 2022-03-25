@@ -572,3 +572,11 @@ let id = ["muzi", "frodo", "apeach", "neo"]
 let report = ["muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"]
 let k = 2
 print(solution(id, report, k))
+
+
+
+let result = readLine()!.split(separator: " ")
+let A = Int(result[0]) ?? 0
+let B = Int(result[1]) ?? 0
+
+print(A - B)
