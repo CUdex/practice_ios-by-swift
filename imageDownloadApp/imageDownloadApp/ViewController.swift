@@ -26,8 +26,15 @@ class ViewController: UIViewController, URLSessionDownloadDelegate {
         imgView.image = nil
         indicatorView.startAnimating()
         let sessionConfiguration = URLSessionConfiguration.default
-        let session = URLSession(configuration: sessionConfiguration, delegate: self, delegateQueue: OperationQueue.main)
-        downloadTask = session.downloadTask(with: URL(string: "https://raw.githubusercontent.com/ChoiJinYoung/iphonewithswift2/master/sample.jpeg")!)
+        let session = URLSession(configuration: sessionConfiguration, delegate: nil, delegateQueue: OperationQueue.main)
+        // delegate가 아닌 closure를 이용한 데이터 다운
+        downloadTask = session.downloadTask(with: URL(string: "https://raw.githubusercontent.com/ChoiJinYoung/iphonewithswift2/master/sample.jpeg")!, completionHandler: {(data, response, error) -> Void in
+            let dataTemp: Data = try! Data(contentsOf: data!)
+            self.imgView.image = UIImage(data: dataTemp)
+            self.indicatorView.stopAnimating()
+        })
+        
+        //downloadTask = session.downloadTask(with: URL(string: "https://raw.githubusercontent.com/ChoiJinYoung/iphonewithswift2/master/sample.jpeg")!)
         downloadTask.resume()
     }
     @IBAction func suspendAction(_ sender: Any) {
