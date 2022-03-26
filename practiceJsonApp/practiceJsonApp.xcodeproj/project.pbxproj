@@ -20,6 +20,7 @@
 		FD7DBF3C27EDF7DA000C6A9C /* sunny.png in Resources */ = {isa = PBXBuildFile; fileRef = FD7DBF3727EDF7DA000C6A9C /* sunny.png */; };
 		FD7DBF3D27EDF7DA000C6A9C /* cloudy.png in Resources */ = {isa = PBXBuildFile; fileRef = FD7DBF3827EDF7DA000C6A9C /* cloudy.png */; };
 		FD7DBF3F27EDF897000C6A9C /* TableViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DBF3E27EDF897000C6A9C /* TableViewCellController.swift */; };
+		FD7DBF4127EF1AF0000C6A9C /* testVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DBF4027EF1AF0000C6A9C /* testVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FD7DBF3727EDF7DA000C6A9C /* sunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sunny.png; path = ../../../weatherTableApp/weatherTableApp/Resource/sunny.png; sourceTree = "<group>"; };
 		FD7DBF3827EDF7DA000C6A9C /* cloudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloudy.png; path = ../../../weatherTableApp/weatherTableApp/Resource/cloudy.png; sourceTree = "<group>"; };
 		FD7DBF3E27EDF897000C6A9C /* TableViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellController.swift; sourceTree = "<group>"; };
+		FD7DBF4027EF1AF0000C6A9C /* testVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				FD7DBF1E27EDF613000C6A9C /* SceneDelegate.swift */,
 				FD7DBF2027EDF613000C6A9C /* ViewController.swift */,
 				FD7DBF3E27EDF897000C6A9C /* TableViewCellController.swift */,
+				FD7DBF4027EF1AF0000C6A9C /* testVC.swift */,
 				FD7DBF2227EDF613000C6A9C /* Main.storyboard */,
 				FD7DBF2827EDF613000C6A9C /* Assets.xcassets */,
 				FD7DBF2A27EDF613000C6A9C /* LaunchScreen.storyboard */,
@@ -174,6 +177,7 @@
 			files = (
 				FD7DBF2127EDF613000C6A9C /* ViewController.swift in Sources */,
 				FD7DBF1D27EDF613000C6A9C /* AppDelegate.swift in Sources */,
+				FD7DBF4127EF1AF0000C6A9C /* testVC.swift in Sources */,
 				FD7DBF2727EDF613000C6A9C /* practiceJsonApp.xcdatamodeld in Sources */,
 				FD7DBF1F27EDF613000C6A9C /* SceneDelegate.swift in Sources */,
 				FD7DBF3F27EDF897000C6A9C /* TableViewCellController.swift in Sources */,

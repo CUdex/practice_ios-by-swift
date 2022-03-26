@@ -19,6 +19,14 @@ class ViewController: UIViewController {
     var dataList = [Weather]()
     @IBOutlet weak var weatherTable: UITableView!
     
+    @IBAction func goToView(_ sender: Any) {
+        
+        // button을 통한 화면 이동
+        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        let testVC = storyBoard.instantiateViewController(withIdentifier: "testVC") as! testVC
+        self.present(testVC, animated: false, completion: nil)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
