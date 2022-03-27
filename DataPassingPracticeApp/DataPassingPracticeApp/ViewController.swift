@@ -16,7 +16,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let notificationName = Notification.Name("sendSomeString")
+        NotificationCenter.default.addObserver(self, selector: #selector(showSomeString), name: notificationName, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
     }
+    
+    @objc func keyboardWillShow() {
+        print("will show")
+    }
+    
+
     
     // 1. property
     @IBAction func moveToDetail(_ sender: Any) {
@@ -70,6 +81,21 @@ class ViewController: UIViewController {
         }
         self.present(detailVC, animated: true, completion: nil)
         
+    }
+    
+    // 6. notification
+    
+    @IBAction func moveToNoti(_ sender: Any) {
+        let detailVC = notiDetailViewController(nibName: "notiDetailViewController", bundle: nil)
+        self.present(detailVC, animated: true, completion: nil)
+    }
+    
+    @objc func showSomeString(notification: Notification) {
+        if let str = notification.userInfo?["str"] as? String {
+            
+            self.dataLable.text = str
+            
+        }
     }
     
 

@@ -23,6 +23,8 @@
 		FD7DBF7627EF5D34000C6A9C /* DelegateDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD7DBF7427EF5D34000C6A9C /* DelegateDetailViewController.xib */; };
 		FD7DBF7927EF6144000C6A9C /* ClosureDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DBF7727EF6144000C6A9C /* ClosureDetailViewController.swift */; };
 		FD7DBF7A27EF6144000C6A9C /* ClosureDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD7DBF7827EF6144000C6A9C /* ClosureDetailViewController.xib */; };
+		FD7DBF7D27F06863000C6A9C /* notiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DBF7B27F06863000C6A9C /* notiDetailViewController.swift */; };
+		FD7DBF7E27F06863000C6A9C /* notiDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD7DBF7C27F06863000C6A9C /* notiDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		FD7DBF7427EF5D34000C6A9C /* DelegateDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelegateDetailViewController.xib; sourceTree = "<group>"; };
 		FD7DBF7727EF6144000C6A9C /* ClosureDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureDetailViewController.swift; sourceTree = "<group>"; };
 		FD7DBF7827EF6144000C6A9C /* ClosureDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClosureDetailViewController.xib; sourceTree = "<group>"; };
+		FD7DBF7B27F06863000C6A9C /* notiDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notiDetailViewController.swift; sourceTree = "<group>"; };
+		FD7DBF7C27F06863000C6A9C /* notiDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = notiDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 				FD7DBF7427EF5D34000C6A9C /* DelegateDetailViewController.xib */,
 				FD7DBF7727EF6144000C6A9C /* ClosureDetailViewController.swift */,
 				FD7DBF7827EF6144000C6A9C /* ClosureDetailViewController.xib */,
+				FD7DBF7B27F06863000C6A9C /* notiDetailViewController.swift */,
+				FD7DBF7C27F06863000C6A9C /* notiDetailViewController.xib */,
 			);
 			path = DataPassingPracticeApp;
 			sourceTree = "<group>";
@@ -156,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD7DBF7A27EF6144000C6A9C /* ClosureDetailViewController.xib in Resources */,
+				FD7DBF7E27F06863000C6A9C /* notiDetailViewController.xib in Resources */,
 				FD7DBF7627EF5D34000C6A9C /* DelegateDetailViewController.xib in Resources */,
 				FD7DBF5E27EF518F000C6A9C /* LaunchScreen.storyboard in Resources */,
 				FD7DBF5B27EF518F000C6A9C /* Assets.xcassets in Resources */,
@@ -177,6 +184,7 @@
 				FD7DBF4F27EF518E000C6A9C /* AppDelegate.swift in Sources */,
 				FD7DBF7527EF5D34000C6A9C /* DelegateDetailViewController.swift in Sources */,
 				FD7DBF6927EF5333000C6A9C /* DetailViewController.swift in Sources */,
+				FD7DBF7D27F06863000C6A9C /* notiDetailViewController.swift in Sources */,
 				FD7DBF6C27EF58C2000C6A9C /* SegueDetailViewController.swift in Sources */,
 				FD7DBF5927EF518E000C6A9C /* DataPassingPracticeApp.xcdatamodeld in Sources */,
 				FD7DBF5127EF518E000C6A9C /* SceneDelegate.swift in Sources */,
