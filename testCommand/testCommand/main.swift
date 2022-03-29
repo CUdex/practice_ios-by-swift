@@ -7,5 +7,8 @@
 
 import Foundation
 
-print("aad")
 
+//let string = readLine()!
+let num = readLine()!.split(separator: " ").map { Double($0)! }
+
+print(num[0] / num[1])
