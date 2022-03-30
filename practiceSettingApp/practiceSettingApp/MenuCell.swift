@@ -9,6 +9,10 @@ import UIKit
 
 class MenuCell: UITableViewCell {
 
+    @IBOutlet weak var leftImage: UIImageView!
+    @IBOutlet weak var middleTitle: UILabel!
+    @IBOutlet weak var rightImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
