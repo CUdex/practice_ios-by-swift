@@ -19,6 +19,11 @@
 		FD7DBFCB27F33DFF000C6A9C /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DBFC927F33DFF000C6A9C /* MenuCell.swift */; };
 		FD7DBFCC27F33DFF000C6A9C /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD7DBFCA27F33DFF000C6A9C /* MenuCell.xib */; };
 		FD7DBFCE27F493E8000C6A9C /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DBFCD27F493E8000C6A9C /* SettingModel.swift */; };
+		FD7DBFD127F5E3DB000C6A9C /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DBFCF27F5E3DB000C6A9C /* GeneralViewController.swift */; };
+		FD7DBFD227F5E3DB000C6A9C /* GeneralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD7DBFD027F5E3DB000C6A9C /* GeneralViewController.xib */; };
+		FD7DBFD427F5E413000C6A9C /* GeneralViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7DBFD327F5E413000C6A9C /* GeneralViewController.storyboard */; };
+		FD7DBFD927F7DECE000C6A9C /* MyIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DBFD727F7DECE000C6A9C /* MyIDViewController.swift */; };
+		FD7DBFDA27F7DECE000C6A9C /* MyIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD7DBFD827F7DECE000C6A9C /* MyIDViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		FD7DBFC927F33DFF000C6A9C /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		FD7DBFCA27F33DFF000C6A9C /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		FD7DBFCD27F493E8000C6A9C /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		FD7DBFCF27F5E3DB000C6A9C /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
+		FD7DBFD027F5E3DB000C6A9C /* GeneralViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralViewController.xib; sourceTree = "<group>"; };
+		FD7DBFD327F5E413000C6A9C /* GeneralViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GeneralViewController.storyboard; sourceTree = "<group>"; };
+		FD7DBFD727F7DECE000C6A9C /* MyIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIDViewController.swift; sourceTree = "<group>"; };
+		FD7DBFD827F7DECE000C6A9C /* MyIDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyIDViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +62,6 @@
 		FD7DBFA227F1E58C000C6A9C = {
 			isa = PBXGroup;
 			children = (
-				FD7DBFCD27F493E8000C6A9C /* SettingModel.swift */,
 				FD7DBFAD27F1E58C000C6A9C /* practiceSettingApp */,
 				FD7DBFAC27F1E58C000C6A9C /* Products */,
 			);
@@ -69,15 +78,21 @@
 		FD7DBFAD27F1E58C000C6A9C /* practiceSettingApp */ = {
 			isa = PBXGroup;
 			children = (
+				FD7DBFCD27F493E8000C6A9C /* SettingModel.swift */,
 				FD7DBFAE27F1E58C000C6A9C /* AppDelegate.swift */,
 				FD7DBFB027F1E58C000C6A9C /* SceneDelegate.swift */,
 				FD7DBFB227F1E58C000C6A9C /* ViewController.swift */,
 				FD7DBFB427F1E58C000C6A9C /* Main.storyboard */,
 				FD7DBFC527F33334000C6A9C /* ProfileCell.swift */,
 				FD7DBFC927F33DFF000C6A9C /* MenuCell.swift */,
+				FD7DBFCF27F5E3DB000C6A9C /* GeneralViewController.swift */,
+				FD7DBFD027F5E3DB000C6A9C /* GeneralViewController.xib */,
+				FD7DBFD727F7DECE000C6A9C /* MyIDViewController.swift */,
+				FD7DBFD827F7DECE000C6A9C /* MyIDViewController.xib */,
 				FD7DBFCA27F33DFF000C6A9C /* MenuCell.xib */,
 				FD7DBFC627F33334000C6A9C /* ProfileCell.xib */,
 				FD7DBFBA27F1E58C000C6A9C /* Assets.xcassets */,
+				FD7DBFD327F5E413000C6A9C /* GeneralViewController.storyboard */,
 				FD7DBFBC27F1E58C000C6A9C /* LaunchScreen.storyboard */,
 				FD7DBFBF27F1E58C000C6A9C /* Info.plist */,
 				FD7DBFB727F1E58C000C6A9C /* practiceSettingApp.xcdatamodeld */,
@@ -144,10 +159,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD7DBFBE27F1E58C000C6A9C /* LaunchScreen.storyboard in Resources */,
+				FD7DBFDA27F7DECE000C6A9C /* MyIDViewController.xib in Resources */,
 				FD7DBFC827F33334000C6A9C /* ProfileCell.xib in Resources */,
 				FD7DBFCC27F33DFF000C6A9C /* MenuCell.xib in Resources */,
 				FD7DBFBB27F1E58C000C6A9C /* Assets.xcassets in Resources */,
 				FD7DBFB627F1E58C000C6A9C /* Main.storyboard in Resources */,
+				FD7DBFD227F5E3DB000C6A9C /* GeneralViewController.xib in Resources */,
+				FD7DBFD427F5E413000C6A9C /* GeneralViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +178,9 @@
 			files = (
 				FD7DBFB327F1E58C000C6A9C /* ViewController.swift in Sources */,
 				FD7DBFB927F1E58C000C6A9C /* practiceSettingApp.xcdatamodeld in Sources */,
+				FD7DBFD927F7DECE000C6A9C /* MyIDViewController.swift in Sources */,
 				FD7DBFCB27F33DFF000C6A9C /* MenuCell.swift in Sources */,
+				FD7DBFD127F5E3DB000C6A9C /* GeneralViewController.swift in Sources */,
 				FD7DBFAF27F1E58C000C6A9C /* AppDelegate.swift in Sources */,
 				FD7DBFB127F1E58C000C6A9C /* SceneDelegate.swift in Sources */,
 				FD7DBFCE27F493E8000C6A9C /* SettingModel.swift in Sources */,

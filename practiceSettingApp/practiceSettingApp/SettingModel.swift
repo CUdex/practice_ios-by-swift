@@ -15,3 +15,9 @@ struct SettingModel {
     var subTitle: String?
     var rightImageName: String?
 }
+
+
+// generalCell에서 사용할 구조체 생성
+struct GeneralModel {
+    var leftLable: String = ""
+}

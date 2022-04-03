@@ -14,6 +14,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var settingTableView: UITableView!
     
+    // 세부화면 이동 시 설정 값이 바뀌어 appear로 처리
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,10 +28,15 @@ class ViewController: UIViewController {
         // tableView에 Cell 등록
         settingTableView.register(UINib(nibName: "ProfileCell", bundle: nil), forCellReuseIdentifier: "ProfileCell")
         settingTableView.register(UINib(nibName: "MenuCell", bundle: nil), forCellReuseIdentifier: "MenuCell")
-        
         // tableview background color 변경
         settingTableView.backgroundColor = UIColor(white: 233/255, alpha: 1)
+ 
         
+        // navigation title 설정
+        title = "Settings"
+        // settings 문구 움직임
+ 
+        self.view.backgroundColor = UIColor(white: 233/255, alpha: 1)
         makeData()
     }
     
@@ -36,6 +46,10 @@ class ViewController: UIViewController {
                              SettingModel(leftImageName: "person.fill", menuTitle: "Accessibility", subTitle: nil, rightImageName: "chevron.right"),
                              SettingModel(leftImageName: "hand.raised.fill", menuTitle: "Privacy", subTitle: nil, rightImageName: "chevron.right")])
         
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }
 
@@ -79,6 +93,22 @@ extension ViewController:UITableViewDataSource, UITableViewDelegate {
             return 100
         }
         return 50
+    }
+    
+    // cell 선택 시 action 함수
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        if indexPath.section == 0 && indexPath.row == 0 {
+            let myidVC = MyIDViewController(nibName: "MyIDViewController", bundle: nil)
+            self.present(myidVC, animated: true, completion: nil)
+        }
+        else if indexPath.section == 1 && indexPath.row == 0 {
+            if let generalVC = UIStoryboard(name: "GeneralViewController", bundle: nil).instantiateViewController(withIdentifier: "GeneralViewController") as? GeneralViewController {
+                self.navigationController?.pushViewController(generalVC, animated: true)
+            }
+        }
     }
     
     
