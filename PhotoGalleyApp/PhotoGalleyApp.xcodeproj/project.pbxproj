@@ -14,6 +14,7 @@
 		FD1061B72801A6EC00541F64 /* PhotoGalleyApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD1061B52801A6EC00541F64 /* PhotoGalleyApp.xcdatamodeld */; };
 		FD1061B92801A6ED00541F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD1061B82801A6ED00541F64 /* Assets.xcassets */; };
 		FD1061BC2801A6ED00541F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1061BA2801A6ED00541F64 /* LaunchScreen.storyboard */; };
+		FD1061C42801AB2F00541F64 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1061C32801AB2F00541F64 /* PhotoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FD1061B82801A6ED00541F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD1061BB2801A6ED00541F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD1061BD2801A6ED00541F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD1061C32801AB2F00541F64 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		FD1061AB2801A6EC00541F64 /* PhotoGalleyApp */ = {
 			isa = PBXGroup;
 			children = (
+				FD1061C32801AB2F00541F64 /* PhotoCell.swift */,
 				FD1061AC2801A6EC00541F64 /* AppDelegate.swift */,
 				FD1061AE2801A6EC00541F64 /* SceneDelegate.swift */,
 				FD1061B02801A6EC00541F64 /* ViewController.swift */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD1061B72801A6EC00541F64 /* PhotoGalleyApp.xcdatamodeld in Sources */,
+				FD1061C42801AB2F00541F64 /* PhotoCell.swift in Sources */,
 				FD1061B12801A6EC00541F64 /* ViewController.swift in Sources */,
 				FD1061AD2801A6EC00541F64 /* AppDelegate.swift in Sources */,
 				FD1061AF2801A6EC00541F64 /* SceneDelegate.swift in Sources */,
