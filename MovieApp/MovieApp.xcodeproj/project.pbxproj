@@ -16,6 +16,7 @@
 		FD1061E12803013D00541F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1061DF2803013D00541F64 /* LaunchScreen.storyboard */; };
 		FD1061EA280302E100541F64 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1061E8280302E100541F64 /* MovieCell.swift */; };
 		FD1061EB280302E100541F64 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD1061E9280302E100541F64 /* MovieCell.xib */; };
+		FD1061ED28046C0800541F64 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1061EC28046C0800541F64 /* MovieModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FD1061E22803013D00541F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD1061E8280302E100541F64 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		FD1061E9280302E100541F64 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		FD1061EC28046C0800541F64 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		FD1061D02803013C00541F64 /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				FD1061EC28046C0800541F64 /* MovieModel.swift */,
 				FD1061E8280302E100541F64 /* MovieCell.swift */,
 				FD1061E9280302E100541F64 /* MovieCell.xib */,
 				FD1061D12803013C00541F64 /* AppDelegate.swift */,
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD1061ED28046C0800541F64 /* MovieModel.swift in Sources */,
 				FD1061D62803013C00541F64 /* ViewController.swift in Sources */,
 				FD1061D22803013C00541F64 /* AppDelegate.swift in Sources */,
 				FD1061DC2803013C00541F64 /* MovieApp.xcdatamodeld in Sources */,

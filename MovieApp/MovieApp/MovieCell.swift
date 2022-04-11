@@ -9,10 +9,26 @@ import UIKit
 
 class MovieCell: UITableViewCell {
     
-    @IBOutlet weak var titleLable: UILabel!
-    @IBOutlet weak var dataLable: UILabel!
-    @IBOutlet weak var descriptionLable: UILabel!
-    @IBOutlet weak var priceLable: UILabel!
+    @IBOutlet weak var titleLable: UILabel! {
+        didSet {
+            titleLable.font = UIFont.systemFont(ofSize: 18, weight: .medium)
+        }
+    }
+    @IBOutlet weak var dataLable: UILabel! {
+        didSet {
+            dataLable.font = .systemFont(ofSize: 13, weight: .light)
+        }
+    }
+    @IBOutlet weak var descriptionLable: UILabel! {
+        didSet {
+            descriptionLable.font = .systemFont(ofSize: 16, weight: .light)
+        }
+    }
+    @IBOutlet weak var priceLable: UILabel! {
+        didSet {
+            priceLable.font = .systemFont(ofSize: 14, weight: .bold)
+        }
+    }
     @IBOutlet weak var Movieimg: UIImageView!
     
     override func awakeFromNib() {
