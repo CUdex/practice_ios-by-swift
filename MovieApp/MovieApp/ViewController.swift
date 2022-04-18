@@ -23,7 +23,33 @@ class ViewController: UIViewController {
         searchBar.delegate = self
         requestMovieAPI()
     }
-    
+    // image 가져오기
+    // escaping은 클로저 내 로직을 바깥으로 가지고 가기위해 필요
+    func loadImage(urlString: String, completion: @escaping (UIImage?) -> Void) {
+        let sessionConfig = URLSessionConfiguration.default
+        let session = URLSession(configuration: sessionConfig)
+        
+        if let hasUrl = URL(string: urlString) {
+            var request = URLRequest(url: hasUrl)
+            request.httpMethod = "GET"
+            
+            session.dataTask(with: request) { data, response, error in
+                print ((response as! HTTPURLResponse).statusCode)
+                
+                if let hasData = data {
+                    completion(UIImage(data: hasData))
+                    return
+                }
+                
+               
+            }.resume()
+            session.finishTasksAndInvalidate()
+        }
+        
+        // function을 사용하지 못하게되면 function이 메모리를 계속 가지고 있기 때문에 nil로 끝내야한다.
+        completion(nil)
+ 
+    }
     //network 호출
     func requestMovieAPI() {
         let sessionConfig = URLSessionConfiguration.default
@@ -76,6 +102,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return self.movieModel?.results.count ?? 0
     }
     
+    
+    // 콘텐츠 내용만큼 높이 설정
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieCell
         
@@ -87,7 +123,43 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let price = self.movieModel?.results[indexPath.row].trackPrice?.description ?? ""
         
         cell.priceLable.text = currency + price
+        
+        // image 설정
+        if let hasUrl = self.movieModel?.results[indexPath.row].artworkUrl100 {
+            self.loadImage(urlString: hasUrl) { image in
+                DispatchQueue.main.async {
+                    cell.Movieimg.image = image
+                }
+            }
+        }
+        
+        
+        // 날짜 표기 설정
+        if let dateString = self.movieModel?.results[indexPath.row].releaseDate {
+            let formatter = ISO8601DateFormatter()
+            if let isoDate = formatter.date(from: dateString) {
+                let myFormatter = DateFormatter()
+                myFormatter.dateFormat = "yyyy년 MM월 dd일"
+                
+                let dateString = myFormatter.string(from: isoDate)
+                
+                cell.dataLable.text = dateString
+            }
+        }
         return cell
+    }
+    
+    // cell이 클릭했을때 실행되는 함수
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // storyboard 가져오기
+        let detailVC = UIStoryboard(name: "DetailViewController", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        
+        detailVC.movieResult = self.movieModel?.results[indexPath.row]
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        detailVC.modalPresentationStyle = .fullScreen
+        self.present(detailVC, animated: true) { }
     }
     
     

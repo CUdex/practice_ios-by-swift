@@ -26,6 +26,7 @@ struct ResultData: Codable {
     let longDescription: String?
     let trackPrice: Double?
     let currency: String?
+    let releaseDate: String?
     //let image: String
     
     

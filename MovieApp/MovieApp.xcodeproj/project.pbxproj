@@ -17,6 +17,8 @@
 		FD1061EA280302E100541F64 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1061E8280302E100541F64 /* MovieCell.swift */; };
 		FD1061EB280302E100541F64 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD1061E9280302E100541F64 /* MovieCell.xib */; };
 		FD1061ED28046C0800541F64 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1061EC28046C0800541F64 /* MovieModel.swift */; };
+		FD7F19F7280DA15F00EB8DC1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F19F6280DA15F00EB8DC1 /* DetailViewController.swift */; };
+		FD7F19F9280DA17600EB8DC1 /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7F19F8280DA17600EB8DC1 /* DetailViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		FD1061E8280302E100541F64 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		FD1061E9280302E100541F64 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		FD1061EC28046C0800541F64 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		FD7F19F6280DA15F00EB8DC1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FD7F19F8280DA17600EB8DC1 /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +74,11 @@
 				FD1061D12803013C00541F64 /* AppDelegate.swift */,
 				FD1061D32803013C00541F64 /* SceneDelegate.swift */,
 				FD1061D52803013C00541F64 /* ViewController.swift */,
+				FD7F19F6280DA15F00EB8DC1 /* DetailViewController.swift */,
 				FD1061D72803013C00541F64 /* Main.storyboard */,
 				FD1061DD2803013D00541F64 /* Assets.xcassets */,
 				FD1061DF2803013D00541F64 /* LaunchScreen.storyboard */,
+				FD7F19F8280DA17600EB8DC1 /* DetailViewController.storyboard */,
 				FD1061E22803013D00541F64 /* Info.plist */,
 				FD1061DA2803013C00541F64 /* MovieApp.xcdatamodeld */,
 			);
@@ -139,6 +145,7 @@
 			files = (
 				FD1061E12803013D00541F64 /* LaunchScreen.storyboard in Resources */,
 				FD1061DE2803013D00541F64 /* Assets.xcassets in Resources */,
+				FD7F19F9280DA17600EB8DC1 /* DetailViewController.storyboard in Resources */,
 				FD1061EB280302E100541F64 /* MovieCell.xib in Resources */,
 				FD1061D92803013C00541F64 /* Main.storyboard in Resources */,
 			);
@@ -157,6 +164,7 @@
 				FD1061DC2803013C00541F64 /* MovieApp.xcdatamodeld in Sources */,
 				FD1061EA280302E100541F64 /* MovieCell.swift in Sources */,
 				FD1061D42803013C00541F64 /* SceneDelegate.swift in Sources */,
+				FD7F19F7280DA15F00EB8DC1 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
