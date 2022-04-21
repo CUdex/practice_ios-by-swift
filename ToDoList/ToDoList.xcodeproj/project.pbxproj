@@ -7,41 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD1061D22803013C00541F64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1061D12803013C00541F64 /* AppDelegate.swift */; };
-		FD1061D42803013C00541F64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1061D32803013C00541F64 /* SceneDelegate.swift */; };
-		FD1061D62803013C00541F64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1061D52803013C00541F64 /* ViewController.swift */; };
-		FD1061D92803013C00541F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1061D72803013C00541F64 /* Main.storyboard */; };
-		FD1061DC2803013C00541F64 /* MovieApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD1061DA2803013C00541F64 /* MovieApp.xcdatamodeld */; };
-		FD1061DE2803013D00541F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD1061DD2803013D00541F64 /* Assets.xcassets */; };
-		FD1061E12803013D00541F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1061DF2803013D00541F64 /* LaunchScreen.storyboard */; };
-		FD1061EA280302E100541F64 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1061E8280302E100541F64 /* MovieCell.swift */; };
-		FD1061EB280302E100541F64 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD1061E9280302E100541F64 /* MovieCell.xib */; };
-		FD1061ED28046C0800541F64 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1061EC28046C0800541F64 /* MovieModel.swift */; };
-		FD7F19F7280DA15F00EB8DC1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F19F6280DA15F00EB8DC1 /* DetailViewController.swift */; };
-		FD7F19F9280DA17600EB8DC1 /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7F19F8280DA17600EB8DC1 /* DetailViewController.storyboard */; };
-		FD7F19FB2810342000EB8DC1 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F19FA2810342000EB8DC1 /* NetworkLayer.swift */; };
+		FD7F1A09281190A500EB8DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F1A08281190A500EB8DC1 /* AppDelegate.swift */; };
+		FD7F1A0B281190A500EB8DC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F1A0A281190A500EB8DC1 /* SceneDelegate.swift */; };
+		FD7F1A0D281190A500EB8DC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F1A0C281190A500EB8DC1 /* ViewController.swift */; };
+		FD7F1A10281190A500EB8DC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7F1A0E281190A500EB8DC1 /* Main.storyboard */; };
+		FD7F1A13281190A500EB8DC1 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD7F1A11281190A500EB8DC1 /* ToDoList.xcdatamodeld */; };
+		FD7F1A15281190A600EB8DC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7F1A14281190A600EB8DC1 /* Assets.xcassets */; };
+		FD7F1A18281190A600EB8DC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7F1A16281190A600EB8DC1 /* LaunchScreen.storyboard */; };
+		FD7F1A20281198F700EB8DC1 /* ToDoCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F1A1F281198F700EB8DC1 /* ToDoCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FD1061CE2803013C00541F64 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD1061D12803013C00541F64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD1061D32803013C00541F64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FD1061D52803013C00541F64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FD1061D82803013C00541F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FD1061DB2803013C00541F64 /* MovieApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieApp.xcdatamodel; sourceTree = "<group>"; };
-		FD1061DD2803013D00541F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FD1061E02803013D00541F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FD1061E22803013D00541F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD1061E8280302E100541F64 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
-		FD1061E9280302E100541F64 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
-		FD1061EC28046C0800541F64 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
-		FD7F19F6280DA15F00EB8DC1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		FD7F19F8280DA17600EB8DC1 /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
-		FD7F19FA2810342000EB8DC1 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		FD7F1A05281190A500EB8DC1 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD7F1A08281190A500EB8DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD7F1A0A281190A500EB8DC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FD7F1A0C281190A500EB8DC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD7F1A0F281190A500EB8DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD7F1A12281190A500EB8DC1 /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
+		FD7F1A14281190A600EB8DC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD7F1A17281190A600EB8DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD7F1A19281190A600EB8DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7F1A1F281198F700EB8DC1 /* ToDoCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FD1061CB2803013C00541F64 /* Frameworks */ = {
+		FD7F1A02281190A500EB8DC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,79 +41,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FD1061C52803013C00541F64 = {
+		FD7F19FC281190A500EB8DC1 = {
 			isa = PBXGroup;
 			children = (
-				FD1061D02803013C00541F64 /* MovieApp */,
-				FD1061CF2803013C00541F64 /* Products */,
+				FD7F1A07281190A500EB8DC1 /* ToDoList */,
+				FD7F1A06281190A500EB8DC1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FD1061CF2803013C00541F64 /* Products */ = {
+		FD7F1A06281190A500EB8DC1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FD1061CE2803013C00541F64 /* MovieApp.app */,
+				FD7F1A05281190A500EB8DC1 /* ToDoList.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FD1061D02803013C00541F64 /* MovieApp */ = {
+		FD7F1A07281190A500EB8DC1 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				FD1061EC28046C0800541F64 /* MovieModel.swift */,
-				FD1061E8280302E100541F64 /* MovieCell.swift */,
-				FD1061E9280302E100541F64 /* MovieCell.xib */,
-				FD1061D12803013C00541F64 /* AppDelegate.swift */,
-				FD1061D32803013C00541F64 /* SceneDelegate.swift */,
-				FD1061D52803013C00541F64 /* ViewController.swift */,
-				FD7F19F6280DA15F00EB8DC1 /* DetailViewController.swift */,
-				FD7F19FA2810342000EB8DC1 /* NetworkLayer.swift */,
-				FD1061D72803013C00541F64 /* Main.storyboard */,
-				FD1061DD2803013D00541F64 /* Assets.xcassets */,
-				FD1061DF2803013D00541F64 /* LaunchScreen.storyboard */,
-				FD7F19F8280DA17600EB8DC1 /* DetailViewController.storyboard */,
-				FD1061E22803013D00541F64 /* Info.plist */,
-				FD1061DA2803013C00541F64 /* MovieApp.xcdatamodeld */,
+				FD7F1A1F281198F700EB8DC1 /* ToDoCellTableViewCell.swift */,
+				FD7F1A08281190A500EB8DC1 /* AppDelegate.swift */,
+				FD7F1A0A281190A500EB8DC1 /* SceneDelegate.swift */,
+				FD7F1A0C281190A500EB8DC1 /* ViewController.swift */,
+				FD7F1A0E281190A500EB8DC1 /* Main.storyboard */,
+				FD7F1A14281190A600EB8DC1 /* Assets.xcassets */,
+				FD7F1A16281190A600EB8DC1 /* LaunchScreen.storyboard */,
+				FD7F1A19281190A600EB8DC1 /* Info.plist */,
+				FD7F1A11281190A500EB8DC1 /* ToDoList.xcdatamodeld */,
 			);
-			path = MovieApp;
+			path = ToDoList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FD1061CD2803013C00541F64 /* MovieApp */ = {
+		FD7F1A04281190A500EB8DC1 /* ToDoList */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FD1061E52803013D00541F64 /* Build configuration list for PBXNativeTarget "MovieApp" */;
+			buildConfigurationList = FD7F1A1C281190A600EB8DC1 /* Build configuration list for PBXNativeTarget "ToDoList" */;
 			buildPhases = (
-				FD1061CA2803013C00541F64 /* Sources */,
-				FD1061CB2803013C00541F64 /* Frameworks */,
-				FD1061CC2803013C00541F64 /* Resources */,
+				FD7F1A01281190A500EB8DC1 /* Sources */,
+				FD7F1A02281190A500EB8DC1 /* Frameworks */,
+				FD7F1A03281190A500EB8DC1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MovieApp;
-			productName = MovieApp;
-			productReference = FD1061CE2803013C00541F64 /* MovieApp.app */;
+			name = ToDoList;
+			productName = ToDoList;
+			productReference = FD7F1A05281190A500EB8DC1 /* ToDoList.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FD1061C62803013C00541F64 /* Project object */ = {
+		FD7F19FD281190A500EB8DC1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					FD1061CD2803013C00541F64 = {
+					FD7F1A04281190A500EB8DC1 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = FD1061C92803013C00541F64 /* Build configuration list for PBXProject "MovieApp" */;
+			buildConfigurationList = FD7F1A00281190A500EB8DC1 /* Build configuration list for PBXProject "ToDoList" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -131,62 +116,57 @@
 				en,
 				Base,
 			);
-			mainGroup = FD1061C52803013C00541F64;
-			productRefGroup = FD1061CF2803013C00541F64 /* Products */;
+			mainGroup = FD7F19FC281190A500EB8DC1;
+			productRefGroup = FD7F1A06281190A500EB8DC1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FD1061CD2803013C00541F64 /* MovieApp */,
+				FD7F1A04281190A500EB8DC1 /* ToDoList */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FD1061CC2803013C00541F64 /* Resources */ = {
+		FD7F1A03281190A500EB8DC1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD1061E12803013D00541F64 /* LaunchScreen.storyboard in Resources */,
-				FD1061DE2803013D00541F64 /* Assets.xcassets in Resources */,
-				FD7F19F9280DA17600EB8DC1 /* DetailViewController.storyboard in Resources */,
-				FD1061EB280302E100541F64 /* MovieCell.xib in Resources */,
-				FD1061D92803013C00541F64 /* Main.storyboard in Resources */,
+				FD7F1A18281190A600EB8DC1 /* LaunchScreen.storyboard in Resources */,
+				FD7F1A15281190A600EB8DC1 /* Assets.xcassets in Resources */,
+				FD7F1A10281190A500EB8DC1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FD1061CA2803013C00541F64 /* Sources */ = {
+		FD7F1A01281190A500EB8DC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD1061ED28046C0800541F64 /* MovieModel.swift in Sources */,
-				FD1061D62803013C00541F64 /* ViewController.swift in Sources */,
-				FD1061D22803013C00541F64 /* AppDelegate.swift in Sources */,
-				FD1061DC2803013C00541F64 /* MovieApp.xcdatamodeld in Sources */,
-				FD7F19FB2810342000EB8DC1 /* NetworkLayer.swift in Sources */,
-				FD1061EA280302E100541F64 /* MovieCell.swift in Sources */,
-				FD1061D42803013C00541F64 /* SceneDelegate.swift in Sources */,
-				FD7F19F7280DA15F00EB8DC1 /* DetailViewController.swift in Sources */,
+				FD7F1A0D281190A500EB8DC1 /* ViewController.swift in Sources */,
+				FD7F1A20281198F700EB8DC1 /* ToDoCellTableViewCell.swift in Sources */,
+				FD7F1A09281190A500EB8DC1 /* AppDelegate.swift in Sources */,
+				FD7F1A0B281190A500EB8DC1 /* SceneDelegate.swift in Sources */,
+				FD7F1A13281190A500EB8DC1 /* ToDoList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FD1061D72803013C00541F64 /* Main.storyboard */ = {
+		FD7F1A0E281190A500EB8DC1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FD1061D82803013C00541F64 /* Base */,
+				FD7F1A0F281190A500EB8DC1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		FD1061DF2803013D00541F64 /* LaunchScreen.storyboard */ = {
+		FD7F1A16281190A600EB8DC1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FD1061E02803013D00541F64 /* Base */,
+				FD7F1A17281190A600EB8DC1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -194,7 +174,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FD1061E32803013D00541F64 /* Debug */ = {
+		FD7F1A1A281190A600EB8DC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -255,7 +235,7 @@
 			};
 			name = Debug;
 		};
-		FD1061E42803013D00541F64 /* Release */ = {
+		FD7F1A1B281190A600EB8DC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -310,7 +290,7 @@
 			};
 			name = Release;
 		};
-		FD1061E62803013D00541F64 /* Debug */ = {
+		FD7F1A1D281190A600EB8DC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -318,7 +298,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MovieApp/Info.plist;
+				INFOPLIST_FILE = ToDoList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -329,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cudex.MovieApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cudex.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -337,7 +317,7 @@
 			};
 			name = Debug;
 		};
-		FD1061E72803013D00541F64 /* Release */ = {
+		FD7F1A1E281190A600EB8DC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -345,7 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MovieApp/Info.plist;
+				INFOPLIST_FILE = ToDoList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -356,7 +336,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cudex.MovieApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cudex.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -367,20 +347,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FD1061C92803013C00541F64 /* Build configuration list for PBXProject "MovieApp" */ = {
+		FD7F1A00281190A500EB8DC1 /* Build configuration list for PBXProject "ToDoList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD1061E32803013D00541F64 /* Debug */,
-				FD1061E42803013D00541F64 /* Release */,
+				FD7F1A1A281190A600EB8DC1 /* Debug */,
+				FD7F1A1B281190A600EB8DC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FD1061E52803013D00541F64 /* Build configuration list for PBXNativeTarget "MovieApp" */ = {
+		FD7F1A1C281190A600EB8DC1 /* Build configuration list for PBXNativeTarget "ToDoList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD1061E62803013D00541F64 /* Debug */,
-				FD1061E72803013D00541F64 /* Release */,
+				FD7F1A1D281190A600EB8DC1 /* Debug */,
+				FD7F1A1E281190A600EB8DC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -388,17 +368,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FD1061DA2803013C00541F64 /* MovieApp.xcdatamodeld */ = {
+		FD7F1A11281190A500EB8DC1 /* ToDoList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FD1061DB2803013C00541F64 /* MovieApp.xcdatamodel */,
+				FD7F1A12281190A500EB8DC1 /* ToDoList.xcdatamodel */,
 			);
-			currentVersion = FD1061DB2803013C00541F64 /* MovieApp.xcdatamodel */;
-			path = MovieApp.xcdatamodeld;
+			currentVersion = FD7F1A12281190A500EB8DC1 /* ToDoList.xcdatamodel */;
+			path = ToDoList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = FD1061C62803013C00541F64 /* Project object */;
+	rootObject = FD7F19FD281190A500EB8DC1 /* Project object */;
 }
