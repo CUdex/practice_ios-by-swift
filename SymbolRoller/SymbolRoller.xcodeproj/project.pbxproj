@@ -7,35 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD7F1A09281190A500EB8DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F1A08281190A500EB8DC1 /* AppDelegate.swift */; };
-		FD7F1A0B281190A500EB8DC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F1A0A281190A500EB8DC1 /* SceneDelegate.swift */; };
-		FD7F1A0D281190A500EB8DC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F1A0C281190A500EB8DC1 /* ViewController.swift */; };
-		FD7F1A10281190A500EB8DC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7F1A0E281190A500EB8DC1 /* Main.storyboard */; };
-		FD7F1A13281190A500EB8DC1 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD7F1A11281190A500EB8DC1 /* ToDoList.xcdatamodeld */; };
-		FD7F1A15281190A600EB8DC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7F1A14281190A600EB8DC1 /* Assets.xcassets */; };
-		FD7F1A18281190A600EB8DC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7F1A16281190A600EB8DC1 /* LaunchScreen.storyboard */; };
-		FD7F1A20281198F700EB8DC1 /* ToDoCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F1A1F281198F700EB8DC1 /* ToDoCellTableViewCell.swift */; };
-		FD7F1A232812DF7900EB8DC1 /* ToDoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F1A212812DF7900EB8DC1 /* ToDoDetailViewController.swift */; };
-		FD7F1A242812DF7900EB8DC1 /* ToDoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD7F1A222812DF7900EB8DC1 /* ToDoDetailViewController.xib */; };
+		FD7F1A7E281668DD00EB8DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F1A7D281668DD00EB8DC1 /* AppDelegate.swift */; };
+		FD7F1A80281668DD00EB8DC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F1A7F281668DD00EB8DC1 /* SceneDelegate.swift */; };
+		FD7F1A82281668DD00EB8DC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F1A81281668DD00EB8DC1 /* ViewController.swift */; };
+		FD7F1A85281668DD00EB8DC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7F1A83281668DD00EB8DC1 /* Main.storyboard */; };
+		FD7F1A88281668DD00EB8DC1 /* SymbolRoller.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD7F1A86281668DD00EB8DC1 /* SymbolRoller.xcdatamodeld */; };
+		FD7F1A8A281668DE00EB8DC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7F1A89281668DE00EB8DC1 /* Assets.xcassets */; };
+		FD7F1A8D281668DE00EB8DC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7F1A8B281668DE00EB8DC1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FD7F1A05281190A500EB8DC1 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD7F1A08281190A500EB8DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD7F1A0A281190A500EB8DC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FD7F1A0C281190A500EB8DC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FD7F1A0F281190A500EB8DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FD7F1A12281190A500EB8DC1 /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
-		FD7F1A14281190A600EB8DC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FD7F1A17281190A600EB8DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FD7F1A19281190A600EB8DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD7F1A1F281198F700EB8DC1 /* ToDoCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCellTableViewCell.swift; sourceTree = "<group>"; };
-		FD7F1A212812DF7900EB8DC1 /* ToDoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailViewController.swift; sourceTree = "<group>"; };
-		FD7F1A222812DF7900EB8DC1 /* ToDoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoDetailViewController.xib; sourceTree = "<group>"; };
+		FD7F1A7A281668DD00EB8DC1 /* SymbolRoller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SymbolRoller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD7F1A7D281668DD00EB8DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD7F1A7F281668DD00EB8DC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FD7F1A81281668DD00EB8DC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD7F1A84281668DD00EB8DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD7F1A87281668DD00EB8DC1 /* SymbolRoller.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SymbolRoller.xcdatamodel; sourceTree = "<group>"; };
+		FD7F1A89281668DE00EB8DC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD7F1A8C281668DE00EB8DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD7F1A8E281668DE00EB8DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FD7F1A02281190A500EB8DC1 /* Frameworks */ = {
+		FD7F1A77281668DD00EB8DC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,76 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FD7F19FC281190A500EB8DC1 = {
+		FD7F1A71281668DD00EB8DC1 = {
 			isa = PBXGroup;
 			children = (
-				FD7F1A07281190A500EB8DC1 /* ToDoList */,
-				FD7F1A06281190A500EB8DC1 /* Products */,
+				FD7F1A7C281668DD00EB8DC1 /* SymbolRoller */,
+				FD7F1A7B281668DD00EB8DC1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FD7F1A06281190A500EB8DC1 /* Products */ = {
+		FD7F1A7B281668DD00EB8DC1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FD7F1A05281190A500EB8DC1 /* ToDoList.app */,
+				FD7F1A7A281668DD00EB8DC1 /* SymbolRoller.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FD7F1A07281190A500EB8DC1 /* ToDoList */ = {
+		FD7F1A7C281668DD00EB8DC1 /* SymbolRoller */ = {
 			isa = PBXGroup;
 			children = (
-				FD7F1A212812DF7900EB8DC1 /* ToDoDetailViewController.swift */,
-				FD7F1A222812DF7900EB8DC1 /* ToDoDetailViewController.xib */,
-				FD7F1A1F281198F700EB8DC1 /* ToDoCellTableViewCell.swift */,
-				FD7F1A08281190A500EB8DC1 /* AppDelegate.swift */,
-				FD7F1A0A281190A500EB8DC1 /* SceneDelegate.swift */,
-				FD7F1A0C281190A500EB8DC1 /* ViewController.swift */,
-				FD7F1A0E281190A500EB8DC1 /* Main.storyboard */,
-				FD7F1A14281190A600EB8DC1 /* Assets.xcassets */,
-				FD7F1A16281190A600EB8DC1 /* LaunchScreen.storyboard */,
-				FD7F1A19281190A600EB8DC1 /* Info.plist */,
-				FD7F1A11281190A500EB8DC1 /* ToDoList.xcdatamodeld */,
+				FD7F1A7D281668DD00EB8DC1 /* AppDelegate.swift */,
+				FD7F1A7F281668DD00EB8DC1 /* SceneDelegate.swift */,
+				FD7F1A81281668DD00EB8DC1 /* ViewController.swift */,
+				FD7F1A83281668DD00EB8DC1 /* Main.storyboard */,
+				FD7F1A89281668DE00EB8DC1 /* Assets.xcassets */,
+				FD7F1A8B281668DE00EB8DC1 /* LaunchScreen.storyboard */,
+				FD7F1A8E281668DE00EB8DC1 /* Info.plist */,
+				FD7F1A86281668DD00EB8DC1 /* SymbolRoller.xcdatamodeld */,
 			);
-			path = ToDoList;
+			path = SymbolRoller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FD7F1A04281190A500EB8DC1 /* ToDoList */ = {
+		FD7F1A79281668DD00EB8DC1 /* SymbolRoller */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FD7F1A1C281190A600EB8DC1 /* Build configuration list for PBXNativeTarget "ToDoList" */;
+			buildConfigurationList = FD7F1A91281668DE00EB8DC1 /* Build configuration list for PBXNativeTarget "SymbolRoller" */;
 			buildPhases = (
-				FD7F1A01281190A500EB8DC1 /* Sources */,
-				FD7F1A02281190A500EB8DC1 /* Frameworks */,
-				FD7F1A03281190A500EB8DC1 /* Resources */,
+				FD7F1A76281668DD00EB8DC1 /* Sources */,
+				FD7F1A77281668DD00EB8DC1 /* Frameworks */,
+				FD7F1A78281668DD00EB8DC1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ToDoList;
-			productName = ToDoList;
-			productReference = FD7F1A05281190A500EB8DC1 /* ToDoList.app */;
+			name = SymbolRoller;
+			productName = SymbolRoller;
+			productReference = FD7F1A7A281668DD00EB8DC1 /* SymbolRoller.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FD7F19FD281190A500EB8DC1 /* Project object */ = {
+		FD7F1A72281668DD00EB8DC1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					FD7F1A04281190A500EB8DC1 = {
+					FD7F1A79281668DD00EB8DC1 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = FD7F1A00281190A500EB8DC1 /* Build configuration list for PBXProject "ToDoList" */;
+			buildConfigurationList = FD7F1A75281668DD00EB8DC1 /* Build configuration list for PBXProject "SymbolRoller" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,59 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = FD7F19FC281190A500EB8DC1;
-			productRefGroup = FD7F1A06281190A500EB8DC1 /* Products */;
+			mainGroup = FD7F1A71281668DD00EB8DC1;
+			productRefGroup = FD7F1A7B281668DD00EB8DC1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FD7F1A04281190A500EB8DC1 /* ToDoList */,
+				FD7F1A79281668DD00EB8DC1 /* SymbolRoller */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FD7F1A03281190A500EB8DC1 /* Resources */ = {
+		FD7F1A78281668DD00EB8DC1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD7F1A18281190A600EB8DC1 /* LaunchScreen.storyboard in Resources */,
-				FD7F1A242812DF7900EB8DC1 /* ToDoDetailViewController.xib in Resources */,
-				FD7F1A15281190A600EB8DC1 /* Assets.xcassets in Resources */,
-				FD7F1A10281190A500EB8DC1 /* Main.storyboard in Resources */,
+				FD7F1A8D281668DE00EB8DC1 /* LaunchScreen.storyboard in Resources */,
+				FD7F1A8A281668DE00EB8DC1 /* Assets.xcassets in Resources */,
+				FD7F1A85281668DD00EB8DC1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FD7F1A01281190A500EB8DC1 /* Sources */ = {
+		FD7F1A76281668DD00EB8DC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD7F1A0D281190A500EB8DC1 /* ViewController.swift in Sources */,
-				FD7F1A232812DF7900EB8DC1 /* ToDoDetailViewController.swift in Sources */,
-				FD7F1A20281198F700EB8DC1 /* ToDoCellTableViewCell.swift in Sources */,
-				FD7F1A09281190A500EB8DC1 /* AppDelegate.swift in Sources */,
-				FD7F1A0B281190A500EB8DC1 /* SceneDelegate.swift in Sources */,
-				FD7F1A13281190A500EB8DC1 /* ToDoList.xcdatamodeld in Sources */,
+				FD7F1A82281668DD00EB8DC1 /* ViewController.swift in Sources */,
+				FD7F1A7E281668DD00EB8DC1 /* AppDelegate.swift in Sources */,
+				FD7F1A80281668DD00EB8DC1 /* SceneDelegate.swift in Sources */,
+				FD7F1A88281668DD00EB8DC1 /* SymbolRoller.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FD7F1A0E281190A500EB8DC1 /* Main.storyboard */ = {
+		FD7F1A83281668DD00EB8DC1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FD7F1A0F281190A500EB8DC1 /* Base */,
+				FD7F1A84281668DD00EB8DC1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		FD7F1A16281190A600EB8DC1 /* LaunchScreen.storyboard */ = {
+		FD7F1A8B281668DE00EB8DC1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FD7F1A17281190A600EB8DC1 /* Base */,
+				FD7F1A8C281668DE00EB8DC1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -182,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FD7F1A1A281190A600EB8DC1 /* Debug */ = {
+		FD7F1A8F281668DE00EB8DC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -243,7 +231,7 @@
 			};
 			name = Debug;
 		};
-		FD7F1A1B281190A600EB8DC1 /* Release */ = {
+		FD7F1A90281668DE00EB8DC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -298,7 +286,7 @@
 			};
 			name = Release;
 		};
-		FD7F1A1D281190A600EB8DC1 /* Debug */ = {
+		FD7F1A92281668DE00EB8DC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -306,7 +294,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = SymbolRoller/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +305,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cudex.ToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cudex.SymbolRoller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -325,7 +313,7 @@
 			};
 			name = Debug;
 		};
-		FD7F1A1E281190A600EB8DC1 /* Release */ = {
+		FD7F1A93281668DE00EB8DC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -333,7 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = SymbolRoller/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -344,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cudex.ToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cudex.SymbolRoller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -355,20 +343,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FD7F1A00281190A500EB8DC1 /* Build configuration list for PBXProject "ToDoList" */ = {
+		FD7F1A75281668DD00EB8DC1 /* Build configuration list for PBXProject "SymbolRoller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD7F1A1A281190A600EB8DC1 /* Debug */,
-				FD7F1A1B281190A600EB8DC1 /* Release */,
+				FD7F1A8F281668DE00EB8DC1 /* Debug */,
+				FD7F1A90281668DE00EB8DC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FD7F1A1C281190A600EB8DC1 /* Build configuration list for PBXNativeTarget "ToDoList" */ = {
+		FD7F1A91281668DE00EB8DC1 /* Build configuration list for PBXNativeTarget "SymbolRoller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD7F1A1D281190A600EB8DC1 /* Debug */,
-				FD7F1A1E281190A600EB8DC1 /* Release */,
+				FD7F1A92281668DE00EB8DC1 /* Debug */,
+				FD7F1A93281668DE00EB8DC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -376,17 +364,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FD7F1A11281190A500EB8DC1 /* ToDoList.xcdatamodeld */ = {
+		FD7F1A86281668DD00EB8DC1 /* SymbolRoller.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FD7F1A12281190A500EB8DC1 /* ToDoList.xcdatamodel */,
+				FD7F1A87281668DD00EB8DC1 /* SymbolRoller.xcdatamodel */,
 			);
-			currentVersion = FD7F1A12281190A500EB8DC1 /* ToDoList.xcdatamodel */;
-			path = ToDoList.xcdatamodeld;
+			currentVersion = FD7F1A87281668DD00EB8DC1 /* SymbolRoller.xcdatamodel */;
+			path = SymbolRoller.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = FD7F19FD281190A500EB8DC1 /* Project object */;
+	rootObject = FD7F1A72281668DD00EB8DC1 /* Project object */;
 }
